@@ -1,0 +1,453 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "passed": true,
+      "check": "390 page loads"
+    },
+    {
+      "passed": true,
+      "check": "390 complete model-written question is above the fold"
+    },
+    {
+      "passed": true,
+      "check": "390 setup link points to the GitHub README"
+    },
+    {
+      "passed": true,
+      "check": "390 notebook navy tokens match the review"
+    },
+    {
+      "passed": true,
+      "check": "390 Ink on paper meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "390 Accent on paper meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "390 Button text meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "390 Muted on paper meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "390 Muted on limits meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "390 Output text meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "390 closed has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "390 navigation #start"
+    },
+    {
+      "passed": true,
+      "check": "390 navigation #example"
+    },
+    {
+      "passed": true,
+      "check": "390 navigation #evidence"
+    },
+    {
+      "passed": true,
+      "check": "390 opens example 1"
+    },
+    {
+      "passed": true,
+      "check": "390 example 1 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "390 closes example 1"
+    },
+    {
+      "passed": true,
+      "check": "390 opens example 2"
+    },
+    {
+      "passed": true,
+      "check": "390 example 2 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "390 closes example 2"
+    },
+    {
+      "passed": true,
+      "check": "390 opens example 3"
+    },
+    {
+      "passed": true,
+      "check": "390 example 3 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "390 closes example 3"
+    },
+    {
+      "passed": true,
+      "check": "390 opens example 4"
+    },
+    {
+      "passed": true,
+      "check": "390 example 4 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "390 closes example 4"
+    },
+    {
+      "passed": true,
+      "check": "390 all 15 measured checks expand"
+    },
+    {
+      "passed": true,
+      "check": "390 results has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "390 interactive targets at least 44px high"
+    },
+    {
+      "passed": true,
+      "check": "390 disclosure operates by keyboard"
+    },
+    {
+      "passed": true,
+      "check": "390 archive download link resolves"
+    },
+    {
+      "passed": true,
+      "check": "390 downloaded archive bytes match release"
+    },
+    {
+      "passed": true,
+      "check": "1440 page loads"
+    },
+    {
+      "passed": true,
+      "check": "1440 complete model-written question is above the fold"
+    },
+    {
+      "passed": true,
+      "check": "1440 setup link points to the GitHub README"
+    },
+    {
+      "passed": true,
+      "check": "1440 notebook navy tokens match the review"
+    },
+    {
+      "passed": true,
+      "check": "1440 Ink on paper meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "1440 Accent on paper meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "1440 Button text meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "1440 Muted on paper meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "1440 Muted on limits meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "1440 Output text meets AA contrast"
+    },
+    {
+      "passed": true,
+      "check": "1440 closed has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "1440 navigation #start"
+    },
+    {
+      "passed": true,
+      "check": "1440 navigation #example"
+    },
+    {
+      "passed": true,
+      "check": "1440 navigation #evidence"
+    },
+    {
+      "passed": true,
+      "check": "1440 opens example 1"
+    },
+    {
+      "passed": true,
+      "check": "1440 example 1 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "1440 closes example 1"
+    },
+    {
+      "passed": true,
+      "check": "1440 opens example 2"
+    },
+    {
+      "passed": true,
+      "check": "1440 example 2 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "1440 closes example 2"
+    },
+    {
+      "passed": true,
+      "check": "1440 opens example 3"
+    },
+    {
+      "passed": true,
+      "check": "1440 example 3 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "1440 closes example 3"
+    },
+    {
+      "passed": true,
+      "check": "1440 opens example 4"
+    },
+    {
+      "passed": true,
+      "check": "1440 example 4 has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "1440 closes example 4"
+    },
+    {
+      "passed": true,
+      "check": "1440 all 15 measured checks expand"
+    },
+    {
+      "passed": true,
+      "check": "1440 results has no horizontal overflow"
+    },
+    {
+      "passed": true,
+      "check": "1440 interactive targets at least 44px high"
+    },
+    {
+      "passed": true,
+      "check": "1440 disclosure operates by keyboard"
+    },
+    {
+      "passed": true,
+      "check": "1440 archive download link resolves"
+    },
+    {
+      "passed": true,
+      "check": "1440 downloaded archive bytes match release"
+    },
+    {
+      "passed": true,
+      "check": "Zero external page requests"
+    },
+    {
+      "passed": true,
+      "check": "Zero browser runtime errors"
+    }
+  ],
+  "screenshots": [
+    "first-390.png",
+    "full-open-390.png",
+    "first-1440.png",
+    "full-open-1440.png"
+  ],
+  "firstScreens": [
+    {
+      "width": 390,
+      "top": 547.671875,
+      "bottom": 670.671875,
+      "height": 844,
+      "readme": "https://github.com/NickkkLian/build-check-in#readme"
+    },
+    {
+      "width": 1440,
+      "top": 374.828125,
+      "bottom": 455.828125,
+      "height": 900,
+      "readme": "https://github.com/NickkkLian/build-check-in#readme"
+    }
+  ],
+  "contrasts": [
+    {
+      "width": 390,
+      "name": "Ink on paper",
+      "foreground": "rgb(28, 36, 51)",
+      "background": "rgb(250, 248, 241)",
+      "ratio": 14.643577963974995
+    },
+    {
+      "width": 390,
+      "name": "Accent on paper",
+      "foreground": "rgb(31, 58, 107)",
+      "background": "rgb(250, 248, 241)",
+      "ratio": 10.535253447203889
+    },
+    {
+      "width": 390,
+      "name": "Button text",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(31, 58, 107)",
+      "ratio": 11.195276802520068
+    },
+    {
+      "width": 390,
+      "name": "Muted on paper",
+      "foreground": "rgb(84, 93, 108)",
+      "background": "rgb(250, 248, 241)",
+      "ratio": 6.255269563646071
+    },
+    {
+      "width": 390,
+      "name": "Muted on limits",
+      "foreground": "rgb(84, 93, 108)",
+      "background": "rgb(232, 236, 243)",
+      "ratio": 5.610058896929835
+    },
+    {
+      "width": 390,
+      "name": "Output text",
+      "foreground": "rgb(28, 36, 51)",
+      "background": "rgb(241, 242, 245)",
+      "ratio": 13.90079074954941
+    },
+    {
+      "width": 1440,
+      "name": "Ink on paper",
+      "foreground": "rgb(28, 36, 51)",
+      "background": "rgb(250, 248, 241)",
+      "ratio": 14.643577963974995
+    },
+    {
+      "width": 1440,
+      "name": "Accent on paper",
+      "foreground": "rgb(31, 58, 107)",
+      "background": "rgb(250, 248, 241)",
+      "ratio": 10.535253447203889
+    },
+    {
+      "width": 1440,
+      "name": "Button text",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(31, 58, 107)",
+      "ratio": 11.195276802520068
+    },
+    {
+      "width": 1440,
+      "name": "Muted on paper",
+      "foreground": "rgb(84, 93, 108)",
+      "background": "rgb(250, 248, 241)",
+      "ratio": 6.255269563646071
+    },
+    {
+      "width": 1440,
+      "name": "Muted on limits",
+      "foreground": "rgb(84, 93, 108)",
+      "background": "rgb(232, 236, 243)",
+      "ratio": 5.610058896929835
+    },
+    {
+      "width": 1440,
+      "name": "Output text",
+      "foreground": "rgb(28, 36, 51)",
+      "background": "rgb(241, 242, 245)",
+      "ratio": 13.90079074954941
+    }
+  ],
+  "layouts": [
+    {
+      "name": "390 closed",
+      "width": 390,
+      "scrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "name": "390 example 1",
+      "width": 390,
+      "scrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "name": "390 example 2",
+      "width": 390,
+      "scrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "name": "390 example 3",
+      "width": 390,
+      "scrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "name": "390 example 4",
+      "width": 390,
+      "scrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "name": "390 results",
+      "width": 390,
+      "scrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "name": "1440 closed",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "offenders": []
+    },
+    {
+      "name": "1440 example 1",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "offenders": []
+    },
+    {
+      "name": "1440 example 2",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "offenders": []
+    },
+    {
+      "name": "1440 example 3",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "offenders": []
+    },
+    {
+      "name": "1440 example 4",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "offenders": []
+    },
+    {
+      "name": "1440 results",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "offenders": []
+    }
+  ],
+  "network": [],
+  "errors": []
+}

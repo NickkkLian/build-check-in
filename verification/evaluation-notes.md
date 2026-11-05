@@ -1,0 +1,11 @@
+# Measured comparison
+
+The same fictional histories went to Claude Sonnet 5.5 three times per arm. Questions and drills each used twelve cases, and step 2 used nine cases with answers. The selected rounds total 198 outputs across both arms. Plain-prompt counts are from the initial round. Skill question and drill counts follow the second-round fixes. Family and student-note counts follow the third step-2 round. These are historical results. The public wording changes have not had a new model evaluation.
+
+Rows about drill content count only drills that were made. Of 36 runs per arm, the skill declined all 15 runs without family agreement, leaving 21 (36 − 15). The plain prompt made drills in 8 of those 15 runs, giving 29 (21 + 8). The agreement row covers all 15 runs without permission.
+
+All cases were written by the author and are fictional. No real student history has been tested. Ten of twelve cases use the same study-timer project, and eighteen of twenty-one skill drills use its bug. Reviewers who did not build the skill counted the outputs by hand. The skill was revised and rerun on these same cases. There is no held-out set or test on another model. The plain prompt was one line and was never given the rules for consent, quoting, approval, prediction or withholding the fix. A plain prompt with those rules was never tested. The counts do not establish classroom effectiveness.
+
+Errors remain. Two of thirty-six question sets credit an AI action to the student, one instructor note over-credits, and two of twenty-one drills invent events. One of twenty-seven family notes invents an AI explanation. One student note quotes a missing-answer marker as an answer. Sixteen of twenty-one drills give the cause in hint 2 before students write an explanation, although they withhold the fix. A stricter reading would flag nine student-note runs that omit a recorded AI test run. Every draft needs instructor review.
+
+Review-row provenance follows the source manual reviews. Plain instructor over-credit uses step1.md S6. Other question rows use step1-v2.md S1/S4/S6/S9. Parent rows use step2.md for the plain arm and step2-v3.md for the skill arm, P1/P2/P4/P5. Student-note rows use step2-v3.md B2/B7. Drill rows use drill-v2.md D1/D3/D4/D5/D6. Full source reviews contain private release context and are retained outside this project.

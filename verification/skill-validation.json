@@ -1,0 +1,10 @@
+{
+  "passed": null,
+  "status": "unavailable",
+  "reason": "External skill-creator validator requires PyYAML, which is absent from the installed Python runtimes tried. No dependency was installed.",
+  "manual_frontmatter": {
+    "name": "build-checkin",
+    "description_present": true
+  },
+  "scope": "Archive consistency, Python syntax, JSON templates and document links were checked separately in check-results.json."
+}

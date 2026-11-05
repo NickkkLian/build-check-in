@@ -1,0 +1,10 @@
+{
+  "students": [
+    {
+      "label": "Student 1",
+      "history": "student-1/history.json",
+      "last_checkin_version": null,
+      "answers": null
+    }
+  ]
+}

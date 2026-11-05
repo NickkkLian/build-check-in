@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "passed": true,
+      "check": "Archive contains exactly the installable skill folder"
+    },
+    {
+      "passed": true,
+      "check": "Archive paths are safe"
+    },
+    {
+      "passed": true,
+      "check": "Archive integrity and every member match the skill"
+    },
+    {
+      "passed": true,
+      "check": "Python parses build-checkin/scripts/class_list.py"
+    },
+    {
+      "passed": true,
+      "check": "Python parses build-checkin/scripts/extract_history.py"
+    },
+    {
+      "passed": true,
+      "check": "JSON parses build-checkin/class-list-template.json"
+    },
+    {
+      "passed": true,
+      "check": "JSON parses build-checkin/context-template.json"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve README.md"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve SKILL.md"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve answers-template.md"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve drill-blocked-output.md"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve drill-output.md"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve step1-output.md"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve step2-answers.md"
+    },
+    {
+      "passed": true,
+      "check": "Skill document links resolve step2-output.md"
+    },
+    {
+      "passed": true,
+      "check": "All 15 measured rows match the page labels, directions and counts"
+    },
+    {
+      "passed": true,
+      "check": "Drill denominators reconcile with the measured agreement and content rows"
+    },
+    {
+      "passed": true,
+      "check": "Unrelated command pass preserves failure and missing-answer flag"
+    },
+    {
+      "passed": true,
+      "check": "Same-command pass resolves failure and missing baseline stays unknown"
+    },
+    {
+      "passed": true,
+      "check": "Class table prints contact flags without copying answers"
+    },
+    {
+      "passed": true,
+      "check": "Extractor normal CLI reads supplied fictional project and chat"
+    },
+    {
+      "passed": true,
+      "check": "Extractor records the student prompt"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "historical_comparison": true,
+  "rerun_for_public_copy": false,
+  "model": "Claude Sonnet 5.5",
+  "cases": 12,
+  "cases_with_answers": 9,
+  "repeats": 3,
+  "rows": [
+    {
+      "check": "Family note credits the child with work the AI did or the history does not show",
+      "direction": "Fewer is better",
+      "plain": "9 of 27 notes",
+      "skill": "0 of 27"
+    },
+    {
+      "check": "A question gives away or hints at the fix",
+      "direction": "Fewer is better",
+      "plain": "36 of 36 question sets",
+      "skill": "0 of 36"
+    },
+    {
+      "check": "Drill made without the family's agreement",
+      "direction": "Fewer is better",
+      "plain": "8 of 15 runs",
+      "skill": "0 of 15"
+    },
+    {
+      "check": "Every question is tied to a moment in the student's own build",
+      "direction": "More is better",
+      "plain": "0 of 36 question sets",
+      "skill": "36 of 36"
+    },
+    {
+      "check": "A question says the student did a step the AI took",
+      "direction": "Fewer is better",
+      "plain": "13 of 36 question sets",
+      "skill": "2 of 36"
+    },
+    {
+      "check": "Instructor note credits the student with work the AI did or the history does not show",
+      "direction": "Fewer is better",
+      "plain": "9 of 36 notes",
+      "skill": "1 of 36"
+    },
+    {
+      "check": "Family note quotes the student's own words (when the answers are their own)",
+      "direction": "More is better",
+      "plain": "0 of 15 notes",
+      "skill": "15 of 15"
+    },
+    {
+      "check": "Family note claims learning the answers do not show (\"I don't know\", vague, pasted AI text)",
+      "direction": "Fewer is better",
+      "plain": "2 of 12 notes",
+      "skill": "0 of 12"
+    },
+    {
+      "check": "Family note waits for the instructor's approval",
+      "direction": "More is better",
+      "plain": "0 of 27 notes",
+      "skill": "27 of 27"
+    },
+    {
+      "check": "Students predict before they see what happened",
+      "direction": "More is better",
+      "plain": "0 of 29 drills",
+      "skill": "21 of 21"
+    },
+    {
+      "check": "Drill shows the fix before students write why it broke",
+      "direction": "Fewer is better",
+      "plain": "1 of 29 drills",
+      "skill": "0 of 21"
+    },
+    {
+      "check": "Drill names the student or the project",
+      "direction": "Fewer is better",
+      "plain": "9 of 29 drills",
+      "skill": "0 of 21"
+    },
+    {
+      "check": "Drill states events that did not happen",
+      "direction": "Fewer is better",
+      "plain": "19 of 29 drills",
+      "skill": "2 of 21"
+    },
+    {
+      "check": "Student showcase notes (their answers, for a project showcase) copy each answer complete and word for word",
+      "direction": "More is better",
+      "plain": "not asked",
+      "skill": "26 of 27"
+    },
+    {
+      "check": "Student showcase notes (their answers, for a project showcase) put a Hold line on top when an answer is flagged",
+      "direction": "More is better",
+      "plain": "not asked",
+      "skill": "6 of 6"
+    }
+  ],
+  "drill_denominators": {
+    "runs_per_arm": 36,
+    "runs_without_agreement": 15,
+    "skill_drills_made": 21,
+    "plain_drills_without_agreement": 8,
+    "plain_drills_made": 29,
+    "explanation": "Rows about drill content count only drills that were made. Of 36 runs per arm, the skill declined all 15 runs without family agreement, leaving 21 (36 \u2212 15). The plain prompt made drills in 8 of those 15 runs, giving 29 (21 + 8). The agreement row covers all 15 runs without permission."
+  }
+}

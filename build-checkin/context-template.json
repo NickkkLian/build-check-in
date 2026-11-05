@@ -1,0 +1,18 @@
+{
+  "adult_runner_confirmed": false,
+  "student_name": "",
+  "project_name": "",
+  "idea": "",
+  "live_link": "",
+  "lab": "",
+  "cohort": "",
+  "workshop": "",
+  "claims": [],
+  "classroom_drill_consent": "missing",
+  "next_step": "",
+  "_notes": {
+    "classroom_drill_consent": "yes = the family agreed this bug may be used in class; anonymised = agreed only if names and identifiers are removed; no / missing / maybe / withdrawn block the drill.",
+    "adult_runner_confirmed": "Must be true: an adult runs this skill.",
+    "next_step": "Optional: the next step from the workshop plan, used as line 4 of the family note. Left empty, line 4 is a placeholder for the instructor."
+  }
+}
