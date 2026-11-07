@@ -1,0 +1,26 @@
+[
+  {
+    "case": "queue-end",
+    "answers": true
+  },
+  {
+    "case": "garden-units",
+    "answers": true
+  },
+  {
+    "case": "map-offset",
+    "answers": true
+  },
+  {
+    "case": "gallery-case",
+    "answers": true
+  },
+  {
+    "case": "receipt-total",
+    "answers": true
+  },
+  {
+    "case": "shelf-boundary",
+    "answers": true
+  }
+]

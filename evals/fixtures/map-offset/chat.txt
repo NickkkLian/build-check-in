@@ -1,0 +1,3 @@
+USER: At version 1, USER report: got hill instead of lake.
+USER: At version 2, it still gives the same point. Please explain the bug before I change anything.
+USER: Version 3 now looks different. I did not record who changed it or any test run.

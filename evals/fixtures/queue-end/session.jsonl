@@ -1,0 +1,16 @@
+{"type": "user", "message": {"content": "A waiting list must serve the earliest arrival first. Please write a small check for serve(['red', 'blue']) at version 1."}}
+{"type": "assistant", "message": {"content": [{"type": "tool_use", "id": "test-write", "name": "Write", "input": {"file_path": "test_case.py", "content": "# Fictional check for serve(['red', 'blue'])\n"}}]}}
+{"type": "user", "message": {"content": [{"type": "tool_result", "tool_use_id": "test-write", "content": "File written.", "is_error": false}]}}
+{"type": "assistant", "message": {"content": [{"type": "tool_use", "id": "test-1", "name": "Bash", "input": {"command": "python3 test_case.py"}}]}}
+{"type": "user", "message": {"content": [{"type": "tool_result", "tool_use_id": "test-1", "content": "FAIL expected 'red', got 'blue'", "is_error": true}]}}
+{"type": "assistant", "message": {"content": "The code selects the last item instead of the first."}}
+{"type": "user", "message": {"content": "Please try a change for version 2."}}
+{"type": "assistant", "message": {"content": [{"type": "tool_use", "id": "edit-2", "name": "Edit", "input": {"file_path": "queue.py", "old_string": "return items.pop()", "new_string": "return items[-1]"}}]}}
+{"type": "user", "message": {"content": [{"type": "tool_result", "tool_use_id": "edit-2", "content": "Edit applied.", "is_error": false}]}}
+{"type": "assistant", "message": {"content": [{"type": "tool_use", "id": "test-2", "name": "Bash", "input": {"command": "python3 test_case.py"}}]}}
+{"type": "user", "message": {"content": [{"type": "tool_result", "tool_use_id": "test-2", "content": "FAIL version 2 still does not meet the expected result.", "is_error": true}]}}
+{"type": "user", "message": {"content": "Please make the next change for version 3."}}
+{"type": "assistant", "message": {"content": [{"type": "tool_use", "id": "edit-3", "name": "Edit", "input": {"file_path": "queue.py", "old_string": "return items[-1]", "new_string": "return items.pop(0)"}}]}}
+{"type": "user", "message": {"content": [{"type": "tool_result", "tool_use_id": "edit-3", "content": "Edit applied.", "is_error": false}]}}
+{"type": "assistant", "message": {"content": [{"type": "tool_use", "id": "test-3", "name": "Bash", "input": {"command": "python3 test_case.py"}}]}}
+{"type": "user", "message": {"content": [{"type": "tool_result", "tool_use_id": "test-3", "content": "PASS one fictional example, exit code 0", "is_error": false}]}}

@@ -1,0 +1,3 @@
+USER: The instructor supplied snapshots 1, 2 and 3 in order. FAIL expected True, got False at version 1. The writer and runner are not recorded.
+USER: Version 2 still has the same failure according to the saved note. No AI reply or tool call was saved.
+USER: Version 3 has a new comparison. I do not know who changed it. There is no saved run for version 3.
