@@ -36,7 +36,7 @@ Everyone writes one sentence before any fix is shown.
 ## 6. Hint ladder (adult only)
 For students stuck in step 4, one at a time, about a minute apart:
 1. Where to look: the line in resumeGame that reads the saved score.
-2. What is wrong: the storage gives the score back as text ("5"), and adding 1 to text sticks the characters together.
+2. Trace or compare: What value comes back from storage, and what happens to that value when addPoint runs?
 Only after everyone has written their sentence in step 5:
 3. The fix: turn it into a number when it is read: `score: Number(storage.getItem("score")) || 0,`
 

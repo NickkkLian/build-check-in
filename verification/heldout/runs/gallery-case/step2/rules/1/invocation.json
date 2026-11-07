@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "claude",
+    "-p",
+    "--model",
+    "sonnet",
+    "--output-format",
+    "json",
+    "--no-session-persistence",
+    "--max-turns",
+    "10",
+    "--permission-mode",
+    "dontAsk",
+    "--setting-sources",
+    "project",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "<CHECKOUT>/evals/runs/heldout-v1/gallery-case/step2/rules/1/work/empty-mcp.json",
+    "--tools",
+    "Read",
+    "--allowedTools",
+    "Read(./input/**)",
+    "Read(/<CHECKOUT>/evals/runs/heldout-v1/gallery-case/step2/rules/1/work/input/**)",
+    "--disable-slash-commands"
+  ],
+  "cwd": "<CHECKOUT>/evals/runs/heldout-v1/gallery-case/step2/rules/1/work",
+  "stdin": "../prompt.txt",
+  "will_execute": true
+}

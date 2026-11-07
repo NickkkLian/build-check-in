@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Bea built Water Planner, a small watering planner that converts litres to millilitres.\n2. Fixed or explained: Bea wrote, \"Two litres should fill two thousand millilitres.\"\n3. The AI: The AI wrote a small check for the planner and made one change to the multiplier, which did not pass the check. Bea reported making the next change by hand. The AI then ran the check again.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- None of the three answers looks pasted, and none contradicts the history. Q1 and Q2 match the recorded results: the check expected 2000 and got 200 [result:test-1], and the AI's change from 100 to 10 made the number smaller [snapshot:2:water.py][tool:edit-2].\n- Q3: Bea says they changed the multiplier by hand. Only Bea's own message reports this [prompt:3], and the diff matches it [snapshot:3:water.py]. Treat it as the student reporting it, not as observed. The reported pass [result:test-3] is a recorded report, not a rerun.\n- Version 1: the writer of `water.py` is unknown [snapshot:1:water.py]. Don't credit the starting code to Bea or to the AI.\n- Version 1 check: the AI wrote the check file [tool:test-write]. The outcome of that write is recorded as \"unknown\", with only the text \"File written.\" [result:test-write]. The AI ran the check and a failure was reported [tool:test-1][result:test-1].\n- Version 2 failure: the recorded failure text is generic, \"version 2 still does not meet the expected result\" [result:test-2].\n- Version order comes from folder names that staff supplied. Timestamps do not prove the order [snapshot:1:water.py].\n- Consent: the history records public-draft consent as missing. Don't share the showcase notes publicly until the family agrees.\n\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\n### Version 1 [snapshot:1:water.py]\nAI did: the AI wrote a small check for millilitres(2) [tool:test-write], then ran it. The run was reported as \"FAIL expected 2000, got 200\" [tool:test-1][result:test-1].\nAnswer A1, copied unchanged:\n> Two litres should fill two thousand millilitres.\n\n### Version 2 [snapshot:2:water.py]\nAI did: the AI changed the multiplier line from `litres * 100` to `litres * 10` [tool:edit-2][snapshot:2:water.py]. The check was then reported as still failing [result:test-2].\nAnswer A2, copied unchanged:\n> Ten made the answer even smaller.\n\n### Version 3 [snapshot:3:water.py]\nAI did: the AI ran the check after your message, and the run was reported as a pass [tool:test-3][result:test-3]. The student reported making the change to `litres * 1000` by hand [prompt:3].\nAnswer A3, copied unchanged:\n> I changed the multiplier by hand because each litre is a thousand millilitres.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2239,
+      "cacheReadInputTokens": 39913,
+      "cacheCreationInputTokens": 37111,
+      "webSearchRequests": 0,
+      "costUSD": 0.17483329999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 666,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 37111,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 37111,
+    "cache_read_input_tokens": 39913,
+    "output_tokens": 2239,
+    "output_tokens_details": {
+      "thinking_tokens": 666
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 37111,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1758,
+        "cache_read_input_tokens": 35965,
+        "cache_creation_input_tokens": 5094,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5094
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.17483329999999997,
+  "duration_ms": 19315,
+  "duration_api_ms": 16483,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

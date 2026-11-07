@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "passed": true,
+      "check": "scripts/check.py"
+    },
+    {
+      "passed": true,
+      "check": "evals/check_scorer.py"
+    },
+    {
+      "passed": true,
+      "check": "evals/hand_verdicts.py"
+    },
+    {
+      "passed": true,
+      "check": "Three-arm pattern screen completes"
+    },
+    {
+      "passed": true,
+      "check": "All 53 pre-tuning frozen files match"
+    },
+    {
+      "passed": true,
+      "check": "54 unique completed outputs with no exclusions"
+    },
+    {
+      "passed": true,
+      "check": "Shipped instructions match the evaluated instructions"
+    },
+    {
+      "passed": true,
+      "check": "Every output used the same resolved model"
+    },
+    {
+      "passed": true,
+      "check": "Every output has one hand-review record"
+    },
+    {
+      "passed": true,
+      "check": "All verdict quotations, output hashes, envelope results and rollups match"
+    },
+    {
+      "passed": true,
+      "check": "Residual marker failure is retained in the rules arm"
+    },
+    {
+      "passed": true,
+      "check": "Both rule-bearing arms retain all six answer-withholding screen passes"
+    },
+    {
+      "passed": true,
+      "check": "All evaluation Python parses"
+    },
+    {
+      "passed": true,
+      "check": "ZIP ships the evaluated instructions"
+    },
+    {
+      "passed": true,
+      "check": "Handwritten drill example uses a diagnostic hint 2"
+    },
+    {
+      "passed": true,
+      "check": "Public candidates and ZIP omit private names, paths, credential-like data and unencoded version URLs"
+    }
+  ],
+  "privacy_issues": [],
+  "public_files_scanned": 536
+}

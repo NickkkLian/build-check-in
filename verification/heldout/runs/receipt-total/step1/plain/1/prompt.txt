@@ -1,0 +1,3 @@
+Here is a student's build log. Write 3-5 questions to check they understand their project, a note for their instructor about how much the AI did, and a short weekly update for their parents.
+Read <CHECKOUT>/evals/runs/heldout-v1/receipt-total/step1/plain/1/work/input/context.json, <CHECKOUT>/evals/runs/heldout-v1/receipt-total/step1/plain/1/work/input/history.json, <CHECKOUT>/evals/runs/heldout-v1/receipt-total/step1/plain/1/work/input/raw-diffs.md, the files in <CHECKOUT>/evals/runs/heldout-v1/receipt-total/step1/plain/1/work/input/project, and <CHECKOUT>/evals/runs/heldout-v1/receipt-total/step1/plain/1/work/input/session.jsonl.
+Produce the output directly in your reply.

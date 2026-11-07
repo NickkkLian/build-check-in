@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# 10-minute debugging exercise: \"The Number That Moved the Wrong Way\"\n\nThis is anonymised. It uses no name, and the student's project is called \"a watering planner\". The bug comes from one student's three-version log, and the students get a fresh copy of the code.\n\n**Instructor note:** The student's log has three versions. Version 1 multiplied by 100 and failed with \"expected 2000, got 200\". An AI edit in version 2 changed it to 10, and it still failed. The student then typed 1000 by hand at version 3, and the log reports a pass. That pass is the log's own report. Nobody reran it independently, and the check in the log covers one example, `millilitres(2)`. The test file wasn't in the project folder, so I rebuilt the check below from the logged failure message.\n\n## Hand-out (students see this)\n\n```python\ndef millilitres(litres):\n    return litres * 100\n\n# check\nassert millilitres(2) == 2000, f\"expected 2000, got {millilitres(2)}\"\n```\n\nRunning it prints: `AssertionError: expected 2000, got 200`\n\nA helper suggests changing `100` to `10`.\n\n## Timeline\n\n**0:00–2:00 – Predict (solo, on paper)**\n1. Before running anything: what will the check say if we use the helper's `10`?\n2. Which direction does the number need to move, and by how much?\n\n**2:00–5:00 – Read the failure (pairs)**\nThe failure message gives two numbers, 2000 and 200.\n- What is the ratio between them?\n- 2 litres is how many millilitres? So how many millilitres is 1 litre?\n- Does the helper's suggestion move the answer toward 2000 or away from it? Check by working out `2 * 10` by hand.\n\n**5:00–7:00 – Fix and run (pairs)**\nApply your fix and run the check.\n\n**7:00–10:00 – Is one passing check enough? (whole class)**\nThe check only tests `millilitres(2)`.\n1. Name one other input that a wrong formula could still get right. (Hint: what does `litres * 1000` return for `0`? Is there any other formula that also gives 2000 for an input of 2?)\n2. Write one more check with a different input, such as `millilitres(0.5)`.\n3. The last question is the one to talk through: if a helper says \"fixed, it passes\", what would you do before you believe it?\n\n## Answer key (instructor only)\n\n- **Root cause:** The multiplier is 100, but 1 litre = 1000 ml. The failure shows the answer is 10 times too small (200 vs 2000).\n- **Trap:** Changing to `10` makes the output smaller, so it moves further from 2000. Students should predict this in the first step. The real log shows exactly this failed attempt.\n- **Fix:** `return litres * 1000`.\n- **Discussion point:** A single passing example is weak evidence. `litres * 1000` is right, but so would be a wrong formula like `litres ** 3 * 250` for the input 2. Extra inputs (0, 0.5, 10) make the check stronger. Also, \"it passes\" from a helper's output is a report, so students should rerun it themselves.\n- **Common mistakes:**\n  - Students blame the test rather than the code.\n  - They guess a number without using the ratio from the message.\n  - They treat the first pass as proof.\n\n## Before you use this\n- The consent on file for this student allows anonymised classroom drills only. Don't mention the student, the project name, or the version history out loud.\n- I couldn't see the original test file, so the check above is my reconstruction. Run the hand-out once yourself before class.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 2350,
+      "cacheReadInputTokens": 61767,
+      "cacheCreationInputTokens": 29455,
+      "webSearchRequests": 0,
+      "costUSD": 0.14750870000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 328,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 29455,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 29455,
+    "cache_read_input_tokens": 61767,
+    "output_tokens": 2350,
+    "output_tokens_details": {
+      "thinking_tokens": 328
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 29455,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1447,
+        "cache_read_input_tokens": 32264,
+        "cache_creation_input_tokens": 467,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 467
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 8,
+  "total_cost_usd": 0.14750870000000002,
+  "duration_ms": 24106,
+  "duration_api_ms": 20763,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

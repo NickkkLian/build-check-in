@@ -1,0 +1,5 @@
+/build-checkin
+Mode: debug drill.
+The history.json was already produced by the bundled extractor.
+Read <CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/input/context.json, <CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/input/history.json, <CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/input/raw-diffs.md, the files in <CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/input/project, and <CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/input/session.jsonl.
+Produce the skill's complete output directly in your reply.

@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "claude",
+    "-p",
+    "--model",
+    "sonnet",
+    "--output-format",
+    "json",
+    "--no-session-persistence",
+    "--max-turns",
+    "10",
+    "--permission-mode",
+    "dontAsk",
+    "--setting-sources",
+    "project",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "<CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/empty-mcp.json",
+    "--tools",
+    "Read,Skill",
+    "--allowedTools",
+    "Read(./input/**)",
+    "Read(/<CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/input/**)",
+    "Read(./.claude/skills/build-checkin/**)",
+    "Read(/<CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work/.claude/skills/build-checkin/**)",
+    "Skill(build-checkin)"
+  ],
+  "cwd": "<CHECKOUT>/evals/runs/heldout-v1/garden-units/drill/skill/1/work",
+  "stdin": "../prompt.txt",
+  "will_execute": true
+}

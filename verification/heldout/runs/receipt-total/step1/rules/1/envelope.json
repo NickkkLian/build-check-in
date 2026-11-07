@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 1\nStatus: Draft for the instructor. Print only the Student questions part for the student.\n\n## Student questions\nAnswer in your own words. No AI for this page. Short answers are fine.\n1. In your first prompt, you asked the AI to write a check for total([4, 6], 2). What did you expect that check to give, and why?\n2. The check ran and the screen said \"expected 12, got 8\". Walk me through what you thought when you saw that.\n3. At version 2, the AI changed one line and ran the check again, and it still failed. Why do you think that change didn't help?\n4. Your third prompt was \"Please make the next change for version 3.\" How did you decide what to ask for, and what did you look at afterward?\n5. Imagine the service fee on a receipt was 5 instead of 2. What would you check to be sure the total is right?\n\n## Instructor key\nQ1 [prompt:1][tool:test-write]: A good answer mentions that the student's prompt gives prices 4 and 6 and a fee of 2. The student should be able to say how the expected total is made from those. The history records the expected value only in the failure message, \"expected 12\" [result:test-1]. The check file's content beyond a comment line is not recorded, so do not assume what the AI wrote in it. The AI's record shows it wrote the check file [tool:test-write].\nQ2 [result:test-1]: A good answer mentions what the student noticed about the gap between 12 and 8, and what they tried or thought next. The history does not record what they did after seeing it. The failing run is a recorded report, not a rerun.\nQ3 [snapshot:2:receipt.py][tool:edit-2][result:test-2]: A good answer mentions that the version 2 edit replaced the fee-related part of the return line with 0, so the fee was still not added. The student should say in their own words why that left the total wrong. The AI edit record matches the diff. The test result is a recorded report, and it does not say why the test failed.\nQ4 [prompt:3][snapshot:3:receipt.py][result:test-3]: A good answer mentions how the student chose what to ask. The history shows the prompt did not name a change, so they may say they trusted the AI or looked at the failure. For \"afterward\", the student may mention the AI's recorded pass, \"PASS one fictional example\". That pass is a recorded report, not an independent rerun, and only one example was checked.\nQ5 [prompt:1][result:test-3]: A good answer mentions trying another example with a different fee and working out the expected total by hand first. This is a transfer question and has no single recorded answer. The recorded pass covers only one example [result:test-3].\n\n## Private AI contribution note\nAI contribution: The AI's record shows it wrote the check file [tool:test-write], and a failing run was recorded after it [result:test-1]. The AI's edit record matches the diff at version 2 [snapshot:2:receipt.py][tool:edit-2] and at version 3 [snapshot:3:receipt.py][tool:edit-3]. A pass was recorded after version 3 [result:test-3]. The student's prompts [prompt:2][prompt:3] ask for a change but do not say what to change. The writer of the version 1 `receipt.py` is unknown [snapshot:1:receipt.py]. No hand edits by the student are reported.\nInstructor check: Version order comes from staff-supplied folder names, and timestamps do not prove chronology [snapshot:1:receipt.py]. Test results are recorded reports, not reruns [result:test-1][result:test-2][result:test-3]. The write result for the check file is \"File written.\" with no recorded outcome [result:test-write]. No recorded AI reply explains any cause or fix, so Q3 and Q4 depend on the student's own account. The context has no staff claims. Consent for public drafts is missing [context:brief], so keep everything here private.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2250,
+      "cacheReadInputTokens": 35081,
+      "cacheCreationInputTokens": 33636,
+      "webSearchRequests": 0,
+      "costUSD": 0.16056009999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 620,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33636,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33636,
+    "cache_read_input_tokens": 35081,
+    "output_tokens": 2250,
+    "output_tokens_details": {
+      "thinking_tokens": 620
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33636,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1885,
+        "cache_read_input_tokens": 31805,
+        "cache_creation_input_tokens": 5107,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5107
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.16056009999999998,
+  "duration_ms": 22068,
+  "duration_api_ms": 18812,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

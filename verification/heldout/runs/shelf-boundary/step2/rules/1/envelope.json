@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Faye worked on Shelf Slots, a function that says whether a shelf is full once its used slots reach its capacity.\n2. Fixed or explained: Faye wrote, \"At three out of three there is no room left.\"\n3. The AI: The saved history records no AI replies or AI edits, so what the AI did is not recorded.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- Q1 [prompt:1][snapshot:1:shelf.py]: A1 is consistent with the idea, which says full means used equals capacity. The history records a failure for version 1 (expected True, got False). That failure comes from a staff note, not a rerun, and the writer and runner are not recorded. The answer is short and plain, so it reads as the student's own.\n- Q2 [prompt:2][snapshot:2:shelf.py]: A2 is consistent with the history. Version 2 changed the line to `capacity + 1`, and the saved note says the failure remained. No test run, AI reply or tool call is saved, so who made that edit is unknown.\n- Q3 [prompt:3][snapshot:3:shelf.py]: A3 says the student does not know who made the edits. That matches the history, where the writer of all three versions is unknown. A3 does not say what changed at version 3, so you could ask Faye to describe the change in their own words. There is no saved run for version 3.\n- Attribution: every changed line is `unknown_or_conflicting` [snapshot:1:shelf.py][snapshot:2:shelf.py][snapshot:3:shelf.py]. Do not credit Faye or the AI with any edit, test or fix.\n- Consent: the family's consent and classroom-drill consent are both missing, so public use is not permitted. Keep the showcase notes private until the family agrees.\n- No answer looks pasted from an AI, none is contradicted by the history, and none contains personal details or other students' names.\n\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\n### Version 1 [snapshot:1:shelf.py]\nAI did: not recorded\nAnswer A1, copied unchanged:\n> At three out of three there is no room left.\n\n### Version 2 [snapshot:2:shelf.py]\nAI did: not recorded\nAnswer A2, copied unchanged:\n> The second version still misses the exact boundary.\n\n### Version 3 [snapshot:3:shelf.py]\nAI did: not recorded\nAnswer A3, copied unchanged:\n> I looked at the three versions. I do not know who made the edits.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2016,
+      "cacheReadInputTokens": 35188,
+      "cacheCreationInputTokens": 32963,
+      "webSearchRequests": 0,
+      "costUSD": 0.1555388,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 482,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 32963,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 32963,
+    "cache_read_input_tokens": 35188,
+    "output_tokens": 2016,
+    "output_tokens_details": {
+      "thinking_tokens": 482
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 32963,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1400,
+        "cache_read_input_tokens": 31912,
+        "cache_creation_input_tokens": 4327,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4327
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 6,
+  "total_cost_usd": 0.1555388,
+  "duration_ms": 18221,
+  "duration_api_ms": 13691,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

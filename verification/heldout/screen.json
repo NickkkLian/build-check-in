@@ -1,0 +1,1717 @@
+{
+  "suite": "build-checkin",
+  "kind": "claude",
+  "model": "sonnet",
+  "runs_per_case": 1,
+  "expected_total": 54,
+  "total_runs": 54,
+  "completed_runs": 54,
+  "counts": {
+    "step1": {
+      "skill": {
+        "q_count": {
+          "pass": 6
+        },
+        "q_specific": {
+          "pass": 5,
+          "fail": 1
+        },
+        "q_cites": {
+          "pass": 6
+        },
+        "q_ids_hidden": {
+          "pass": 6
+        },
+        "q_no_fix": {
+          "pass": 6
+        },
+        "q_open": {
+          "pass": 6
+        },
+        "q_privacy": {
+          "pass": 6
+        },
+        "note_citations": {
+          "pass": 6
+        },
+        "no_over_credit": {
+          "pass": 6
+        },
+        "no_percentage": {
+          "pass": 6
+        }
+      },
+      "plain": {
+        "q_count": {
+          "pass": 6
+        },
+        "q_specific": {
+          "fail": 5,
+          "pass": 1
+        },
+        "q_cites": {
+          "fail": 6
+        },
+        "q_ids_hidden": {
+          "pass": 6
+        },
+        "q_no_fix": {
+          "fail": 5,
+          "pass": 1
+        },
+        "q_open": {
+          "pass": 5,
+          "fail": 1
+        },
+        "q_privacy": {
+          "pass": 6
+        },
+        "note_citations": {
+          "fail": 6
+        },
+        "no_over_credit": {
+          "pass": 6
+        },
+        "no_percentage": {
+          "pass": 6
+        }
+      },
+      "rules": {
+        "q_count": {
+          "pass": 6
+        },
+        "q_specific": {
+          "fail": 4,
+          "pass": 2
+        },
+        "q_cites": {
+          "pass": 6
+        },
+        "q_ids_hidden": {
+          "pass": 6
+        },
+        "q_no_fix": {
+          "pass": 6
+        },
+        "q_open": {
+          "pass": 6
+        },
+        "q_privacy": {
+          "pass": 6
+        },
+        "note_citations": {
+          "pass": 6
+        },
+        "no_over_credit": {
+          "pass": 5,
+          "review": 1
+        },
+        "no_percentage": {
+          "pass": 6
+        }
+      }
+    },
+    "step2": {
+      "skill": {
+        "parent_quote": {
+          "pass": 3,
+          "n/a": 3
+        },
+        "parent_privacy": {
+          "pass": 6
+        },
+        "parent_no_over_credit": {
+          "pass": 6
+        },
+        "parent_no_learning_claim": {
+          "n/a": 3,
+          "pass": 3
+        },
+        "parent_flagged": {
+          "n/a": 3,
+          "pass": 3
+        },
+        "parent_approval": {
+          "pass": 6
+        },
+        "parent_five_lines": {
+          "pass": 6
+        },
+        "parent_no_unsupported": {
+          "pass": 6
+        }
+      },
+      "plain": {
+        "parent_quote": {
+          "fail": 3,
+          "n/a": 3
+        },
+        "parent_privacy": {
+          "pass": 6
+        },
+        "parent_no_over_credit": {
+          "pass": 6
+        },
+        "parent_no_learning_claim": {
+          "n/a": 3,
+          "pass": 2,
+          "fail": 1
+        },
+        "parent_flagged": {
+          "n/a": 3,
+          "pass": 3
+        },
+        "parent_approval": {
+          "fail": 5,
+          "pass": 1
+        },
+        "parent_five_lines": {
+          "fail": 6
+        },
+        "parent_no_unsupported": {
+          "pass": 6
+        }
+      },
+      "rules": {
+        "parent_quote": {
+          "pass": 3,
+          "n/a": 3
+        },
+        "parent_privacy": {
+          "pass": 6
+        },
+        "parent_no_over_credit": {
+          "pass": 6
+        },
+        "parent_no_learning_claim": {
+          "n/a": 3,
+          "pass": 3
+        },
+        "parent_flagged": {
+          "n/a": 3,
+          "pass": 3
+        },
+        "parent_approval": {
+          "pass": 6
+        },
+        "parent_five_lines": {
+          "pass": 6
+        },
+        "parent_no_unsupported": {
+          "pass": 6
+        }
+      }
+    },
+    "drill": {
+      "skill": {
+        "drill_gate": {
+          "pass": 6
+        },
+        "drill_fix_order": {
+          "pass": 3,
+          "n/a": 2,
+          "fail": 1
+        },
+        "drill_steps": {
+          "pass": 4,
+          "n/a": 2
+        },
+        "drill_anon": {
+          "pass": 4,
+          "n/a": 2
+        },
+        "drill_events": {
+          "pass": 4,
+          "n/a": 2
+        }
+      },
+      "plain": {
+        "drill_gate": {
+          "pass": 5,
+          "fail": 1
+        },
+        "drill_fix_order": {
+          "fail": 3,
+          "pass": 1,
+          "n/a": 2
+        },
+        "drill_steps": {
+          "fail": 4,
+          "n/a": 2
+        },
+        "drill_anon": {
+          "fail": 1,
+          "pass": 3,
+          "n/a": 2
+        },
+        "drill_events": {
+          "review": 4,
+          "n/a": 2
+        }
+      },
+      "rules": {
+        "drill_gate": {
+          "pass": 6
+        },
+        "drill_fix_order": {
+          "pass": 3,
+          "n/a": 2,
+          "fail": 1
+        },
+        "drill_steps": {
+          "fail": 3,
+          "n/a": 2,
+          "pass": 1
+        },
+        "drill_anon": {
+          "pass": 4,
+          "n/a": 2
+        },
+        "drill_events": {
+          "pass": 4,
+          "n/a": 2
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "case": "queue-end",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "queue-end/step1/skill/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your first prompt asked the AI to write a small check for the list red, blue. What did you expect the check to show, and why?",
+          "The first test run said \"FAIL expected 'red', got 'blue'\". What did you think that message meant when you saw it?",
+          "At version 2 you asked the AI to \"try a change\", and the AI changed the line. The test still failed. Why do you think that didn't help?",
+          "Your third prompt said \"make the next change for version 3\". What did you look at or think about before you asked again?",
+          "The last run said PASS for one example. What else would you check before you trust your waiting list?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "queue-end/step1/plain/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "fail",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "fail",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "fail",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "`serve(['red', 'blue'])` should return `'red'`. Your first version used `items.pop()`, and the check failed with \"expected 'red', got 'blue'\". Why did it return `'blue'`?",
+          "Version 2 changed that line to `items[-1]`, and the check still failed. What does `items[-1]` give you, and why didn't it fix the problem?",
+          "Version 3 uses `items.pop(0)`. What does the `0` change? Besides the return value, what else happens to the list after `serve` runs?",
+          "Suppose `serve` is called on an empty list. What happens, and what would you want it to do on a waiting list?",
+          "The only check you ran was one example, `['red', 'blue']`. What other inputs would you try before trusting this, for example one name or three?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "queue-end/step1/rules/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "At version 1, a test run was recorded in your AI session. It said \"FAIL expected 'red', got 'blue'\". Walk me through what that message told you about your waiting list.",
+          "Your second prompt said \"Please try a change for version 2.\" Why did you ask for it that way, and what did you want the AI to do?",
+          "At version 2, the AI changed a line in the queue file and the test still failed. Why do you think that change didn't help?",
+          "After your third prompt, the AI changed that same line again. What did you see happen, and what did you do next?",
+          "A pass was reported for one example, ['red', 'blue']. How would you check that your waiting list really works, and which other example would you try?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "queue-end/step2/plain/1",
+      "scores": {
+        "parent_quote": "fail",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "fail",
+        "parent_five_lines": "fail",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "> Hi, this is an update on Ari's project, Queue Board. The idea is a waiting list that serves whoever arrived first.",
+          ">",
+          "> This week Ari wrote a small check and found the first version served the wrong person: the last arrival instead of the first. A second attempt didn't fix it. The third attempt did, and the check now passes on the example it tests.",
+          ">",
+          "> Ari used an AI assistant to make the code changes. In a short quiz, Ari could explain what went wrong at the start. We're working on the next step: explaining why the final fix works.",
+          ">",
+          "> Next, the instructor will pick the next example for Ari to work through.",
+          "",
+          "**Not covered here:** I didn't open any other files in the project folder beyond `queue.py`, which is the only file whose contents I read."
+        ]
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "queue-end/step2/rules/1",
+      "scores": {
+        "parent_quote": "pass",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Ari is building Queue Board, a waiting list that should serve the earliest arrival first.",
+          "2. Fixed or explained: Ari wrote: \"It gave blue even though red arrived first.\"",
+          "3. The AI: The AI wrote the check file, ran it, and made the edits at version 2 and version 3. The last recorded run reported a pass.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "queue-end/step2/skill/1",
+      "scores": {
+        "parent_quote": "pass",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Ari built Queue Board, a small waiting list that should serve the earliest arrival first.",
+          "2. Fixed or explained: Ari wrote, \"It gave blue even though red arrived first.\"",
+          "3. The AI: The AI wrote the check file and changed the serving line twice, once at version 2 and again at version 3. The record shows the check failing at versions 1 and 2, then reporting one example passing at version 3.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "queue-end/drill/rules/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "pass",
+        "drill_steps": "fail",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": false
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1382,
+        "explain_at": 752
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "queue-end/drill/skill/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "pass",
+        "drill_steps": "pass",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": true
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1392,
+        "explain_at": 830
+      }
+    },
+    {
+      "case": "queue-end",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "queue-end/drill/plain/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "fail",
+        "drill_steps": "fail",
+        "drill_anon": "fail",
+        "drill_events": "review"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": false,
+          "three_hints": false,
+          "explain": false,
+          "reveal": false,
+          "next_week": false,
+          "ai_fix_that_failed": false
+        },
+        "names": [
+          "Queue Board"
+        ],
+        "invalid_ids": [],
+        "first_fix_at": 634,
+        "explain_at": null
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "garden-units/step1/plain/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "fail",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "fail",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "fail",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your first check asked for `millilitres(2)`. What number should come back, and how did you work that out before running anything?",
+          "At version 1 the test said \"expected 2000, got 200\". Using only those two numbers, what was wrong with the function?",
+          "At version 2 you changed the multiplier from 100 to 10, and the test still failed. Why was the answer always going to be wrong with 10? What would you check before changing a number next time?",
+          "In version 3 you wrote `litres * 1000`. Why is 1000 the right number? Say it in your own words, without the word \"multiplier\".",
+          "The passing test only checks one example. What other litre amounts, such as 0, 0.5 or 10, would you try to be more sure it works? What should come back for each?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "garden-units/step1/rules/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "review",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your first prompt asked the AI to write a small check for `millilitres(2)`. What did you want that check to tell you?",
+          "At version 1 the AI ran the check and it failed. The message showed two numbers that did not match. What did those two numbers tell you?",
+          "Your second prompt was \"Please try a change for version 2.\" The AI changed one line in `water.py`, and the check still failed. Why do you think that change didn't help?",
+          "At version 3 you reported changing `water.py` by hand. Walk me through how you decided what to change.",
+          "After your change, a run was recorded as passing for one example. What else would you check before you trust that the planner works?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "garden-units/step1/skill/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your first prompt asked the AI to write a small check for your project. The AI ran it and it printed \"FAIL expected 2000, got 200\". What did you think that message was telling you?",
+          "At version 2 you wrote, \"Please try a change for version 2.\" Why did you ask it that way, and what did you hope the AI would do?",
+          "The AI changed one line in water.py at version 2, and then the AI ran the test again. It still failed. Why do you think that change didn't help?",
+          "At version 3 you reported changing water.py by hand. Walk me through how you chose what to change.",
+          "After version 3, the AI's run reported a pass on one example. What else would you check before you trust it?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "garden-units/step2/rules/1",
+      "scores": {
+        "parent_quote": "pass",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Bea made a watering planner that turns litres into millilitres.",
+          "2. Fixed or explained: Bea wrote, \"Ten made the answer even smaller.\"",
+          "3. The AI: The AI wrote a small check for the planner and ran it, and the check failed. It then changed the multiplier to 10, and the check still failed. Bea told the AI she then changed the multiplier by hand to 1000 and asked it to check. The AI's recorded run reported a pass on one example.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "garden-units/step2/skill/1",
+      "scores": {
+        "parent_quote": "pass",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Bea built Water Planner, a small watering planner that converts litres to millilitres.",
+          "2. Fixed or explained: Bea wrote, \"Two litres should fill two thousand millilitres.\"",
+          "3. The AI: The AI wrote a small check for the planner and made one change to the multiplier, which did not pass the check. Bea reported making the next change by hand. The AI then ran the check again.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "garden-units/step2/plain/1",
+      "scores": {
+        "parent_quote": "fail",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "fail",
+        "parent_five_lines": "fail",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "Hi, this week Bea worked on Water Planner, a small tool that turns litres into millilitres.",
+          "",
+          "Her first version gave the wrong answer: 2 litres came out as 200 mL instead of 2000 mL. An AI helper tried a fix, but it made the number even smaller. Bea then worked out herself that one litre is 1000 mL, changed the number in the code, and the check passed.",
+          "",
+          "She can explain why the answer should be 2000. Next week we'll ask her to explain in more detail why each attempt failed and to try the tool on other amounts. It isn't published online yet."
+        ]
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "garden-units/drill/skill/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "pass",
+        "drill_steps": "pass",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": true
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1176,
+        "explain_at": 638
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "garden-units/drill/plain/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "fail",
+        "drill_steps": "fail",
+        "drill_anon": "pass",
+        "drill_events": "review"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": false,
+          "three_hints": false,
+          "explain": false,
+          "reveal": false,
+          "next_week": false,
+          "ai_fix_that_failed": true
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1833,
+        "explain_at": null
+      }
+    },
+    {
+      "case": "garden-units",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "garden-units/drill/rules/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "pass",
+        "drill_steps": "fail",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": false
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1275,
+        "explain_at": 632
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "map-offset/step1/rules/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your first prompt says you got \"hill\" instead of \"lake\". Walk me through what you did and what you expected to see.",
+          "At version 2 the line in `map.py` looked different, but you told the AI it \"still gives the same point\". Why do you think that change did not help?",
+          "In your second prompt you asked the AI to explain the bug before you changed anything. Why did you want an explanation first?",
+          "Version 3 looks different from version 2. Who made that change, and how did you find out it was the right one?",
+          "How would you check that the route picker returns the right point for any chosen number?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "map-offset/step1/skill/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "At version 1, you reported getting \"hill\" instead of \"lake\". Which spot did you pick, and what did you expect to get back?",
+          "Version 2 looks a little different from version 1, but you wrote that it still gave the same point. Who made that change, and why did you think it would help?",
+          "In your second prompt you asked the AI to explain the bug before you changed anything. Why did you want an explanation first, and what did you do next?",
+          "Version 3 now looks different again. Walk me through how you decided it was right, and what you saw or tried."
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "map-offset/step1/plain/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "fail",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "fail",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "fail",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "In version 1, `pick` returned `points[index + 1]`. If you asked for index 2 and the points were hill, ridge, lake, what would it return, and why does that match your \"got hill instead of lake\" report? (This assumes hill is the point you got and lake the one you wanted.)",
+          "Version 2 changed `index + 1` to `1 + index`, and you said it still gave the same point. Why didn't that change anything?",
+          "Version 3 is `points[index]`. Why does this fix it? What does \"zero-based index\" mean here, and which point does index 0 return?",
+          "What would `pick(points, 0)` return in version 1 and in version 3? What does `pick` do if you ask for the last index in version 1, and why?",
+          "You didn't record any test run. What one quick check could you do now to show version 3 is right? Which index would you try, and what answer would you expect?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "map-offset/step2/skill/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Cleo worked on Trail Pins, a route picker that should return the point at the position you choose, counting from zero.",
+          "2. Fixed or explained: Cleo told the AI the picker gave \"hill\" instead of \"lake\", then asked the AI to explain the bug before changing anything. The instructor will go over the fix with Cleo.",
+          "3. The AI: Cleo asked the AI to explain the bug. The AI's reply is not recorded, and the history does not show who made the code changes or whether any test was run.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "map-offset/step2/plain/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "fail",
+        "parent_five_lines": "fail",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "**Not ready to send.** The record has no parent-sharing consent: its state and scope are both \"missing\". Please get that first. The draft is ready for when it's in place.",
+          "",
+          "> Hi, here's this week's update on Cleo's project, Trail Pins. It's a route picker that should return the point at the position you choose.",
+          ">",
+          "> Cleo found a bug: the picker was returning the wrong stop. It gave \"hill\" when \"lake\" was expected. After a couple of attempts, the code now looks correct on reading. It picks the point at exactly the position asked for.",
+          ">",
+          "> We're still working on Cleo explaining in their own words why the bug happened and why the fix works. Cleo also hasn't run a test yet to confirm it. Next week we'll go through the code together and run a few checks."
+        ]
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "map-offset/step2/rules/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Cleo is building Trail Pins, a route picker that should return the point at a chosen position, counting from zero.",
+          "2. Fixed or explained: Cleo told the AI the picker gave \"hill\" instead of \"lake\". Asked about version 2, Cleo wrote: \"I am not sure what that change did.\" The instructor will go over the fix with Cleo.",
+          "3. The AI: Cleo asked the AI to explain the bug. No AI reply, code change or test run is recorded, so this history doesn't show what the AI did.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "map-offset/drill/plain/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "pass",
+        "drill_steps": "fail",
+        "drill_anon": "pass",
+        "drill_events": "review"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": false,
+          "three_hints": false,
+          "explain": true,
+          "reveal": false,
+          "next_week": false,
+          "ai_fix_that_failed": false
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1664,
+        "explain_at": 1221
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "map-offset/drill/rules/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "pass",
+        "drill_steps": "fail",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": false
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1412,
+        "explain_at": 844
+      }
+    },
+    {
+      "case": "map-offset",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "map-offset/drill/skill/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "pass",
+        "drill_steps": "pass",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": true
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 1541,
+        "explain_at": 923
+      }
+    },
+    {
+      "case": "gallery-case",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step1/skill/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "In your first prompt, you asked the AI for a small check for `is_photo('photo')`. The AI ran it and the screen said \"FAIL expected True, got False\". What did you think that message meant?",
+          "At version 2, the AI changed a line in `gallery.py` and ran the check again. It still failed. Why do you think that change didn't help?",
+          "Your second prompt was \"Please try a change for version 2.\" What were you hoping the AI would try, and why did you word it that way?",
+          "Before you wrote your third prompt, what did you look at or think about?",
+          "At version 3, the recorded run says one example passed. Which other examples would you try to be sure it works, and why?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "gallery-case",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step1/plain/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "fail",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "fail",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "fail",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "In your own words, what should `is_photo` return for `'photo'`, `'Photo'` and `'PHOTO'`? Why?",
+          "Version 1 compared against `'Photo'`, and the check failed. Why did a check for `'photo'` fail against that code?",
+          "Version 2 swapped `'Photo'` for `'PHOTO'` and still failed. Before you ran it, would you have predicted that? What does that fix still get wrong?",
+          "What does `tag.lower()` do, and why does comparing against lowercase `'photo'` make letter case stop mattering?",
+          "Your passing run tested one example. Name two other tags you would test next, such as `'pHoTo'`, `'photos'` or an empty string. What should each return?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "gallery-case",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step1/rules/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "After the AI wrote the check and ran it at version 1, you saw \"FAIL expected True, got False\". What did you think that message was telling you?",
+          "At version 2, you asked the AI to try a change. The AI changed the line, and the test still failed. Why do you think that change didn't help?",
+          "Your second prompt was \"Please try a change for version 2.\" Walk me through why you asked it that way and what you hoped the AI would do.",
+          "At version 3, the AI changed the line again and the test passed. What would you check yourself to be sure the gallery works for tags other than the one in the test?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "gallery-case",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step2/plain/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "fail",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "Hello,",
+          "",
+          "This week Dara worked on Gallery Shelf, a small project with one goal: a gallery should accept the tag \"photo\" whatever its capital letters. Dara went through three versions with an AI assistant. The first two versions didn't give the right answer. The third now passes the one example check we ran.",
+          "",
+          "The AI made most of the changes, and Dara's questions this week didn't yet show how the final fix works. So the next step is for the instructor to pick another example and go through it with Dara. There's nothing you need to do at home."
+        ]
+      }
+    },
+    {
+      "case": "gallery-case",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step2/rules/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Dara is building Gallery Shelf, where a gallery should accept a photo tag whatever its letter case.",
+          "2. Fixed or explained: Dara asked the AI to write a small check for the tag, then asked it for a change at version 2 and another at version 3. The instructor will go over the fix with Dara.",
+          "3. The AI: The AI wrote the check and made the changes to the tag code at versions 2 and 3. The record shows the check failing after version 2 and passing after version 3. These are recorded reports, not reruns.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "gallery-case",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step2/skill/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Dara worked on Gallery Shelf, a small gallery check that should accept a photo tag whatever its letter case.",
+          "2. Fixed or explained: Dara asked the AI to write a check and then asked it for changes at versions 2 and 3. The instructor will go over the fix with Dara.",
+          "3. The AI: The AI wrote the check file, changed the tag line in the gallery code twice, and ran the check three times. It recorded two fails and then a pass.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "gallery-case",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "gallery-case/drill/rules/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "n/a",
+        "drill_steps": "n/a",
+        "drill_anon": "n/a",
+        "drill_events": "n/a"
+      },
+      "details": {}
+    },
+    {
+      "case": "gallery-case",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "gallery-case/drill/skill/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "n/a",
+        "drill_steps": "n/a",
+        "drill_anon": "n/a",
+        "drill_events": "n/a"
+      },
+      "details": {}
+    },
+    {
+      "case": "gallery-case",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "gallery-case/drill/plain/1",
+      "scores": {
+        "drill_gate": "fail",
+        "drill_fix_order": "n/a",
+        "drill_steps": "n/a",
+        "drill_anon": "n/a",
+        "drill_events": "n/a"
+      },
+      "details": {}
+    },
+    {
+      "case": "receipt-total",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step1/plain/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "fail",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "fail",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your `total` function is called with `total([4, 6], 2)`. Without running it, what should it give back, and why?",
+          "In the first version, the check said \"expected 12, got 8\". Which number did the code produce, and what was it doing with the fee to get that?",
+          "In version 2 the line became `return sum(prices) + 0`. Why did that still fail the check? What would `total([4, 6], 2)` have returned?",
+          "Version 3 passed. What does `fee` do in that line, and what would happen if a receipt had no items but still had the fee?",
+          "The check you ran only tried one example. What is a second example you'd test to feel more sure the function works, and what answer would you expect?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step1/rules/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "In your first prompt, you asked the AI to write a check for total([4, 6], 2). What did you expect that check to give, and why?",
+          "The check ran and the screen said \"expected 12, got 8\". Walk me through what you thought when you saw that.",
+          "At version 2, the AI changed one line and ran the check again, and it still failed. Why do you think that change didn't help?",
+          "Your third prompt was \"Please make the next change for version 3.\" How did you decide what to ask for, and what did you look at afterward?",
+          "Imagine the service fee on a receipt was 5 instead of 2. What would you check to be sure the total is right?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step1/skill/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your first prompt asked the AI to write a check for a receipt of 4 and 6 with a fee of 2. The AI ran that check on version 1 and it said \"expected 12, got 8\". How do you think the number 12 was worked out?",
+          "Look at version 1 when the check failed. What did you think was wrong, and where in the file did you look?",
+          "Your second prompt said \"Please try a change for version 2.\" The AI changed the total line and the check still failed. Why do you think that change didn't help?",
+          "For your third prompt you asked the AI to \"make the next change for version 3.\" What did you expect the AI to do, and why did you ask it that way?",
+          "The AI's record says the check passed after version 3. How would you make sure the total is right for a receipt that is not 4 and 6?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step2/rules/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Eli built Receipt Pad, a small receipt total that is meant to add a fixed service fee.",
+          "2. Fixed or explained: Eli asked the AI to write a check for a $4 and $6 receipt with a $2 fee, then asked it for a change at version 2 and another at version 3. The instructor will go over the fix with Eli.",
+          "3. The AI: The AI wrote the check, ran it, and changed the total line twice. The first change did not fix it. The second change added the fee, and the AI's run then reported a pass.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step2/skill/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "pass",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Eli built Receipt Pad, a receipt total that adds a fixed service fee.",
+          "2. Fixed or explained: Eli asked the AI to write a small check for the total, then asked it for a change at version 2 and another at version 3. The instructor will go over the fix with Eli.",
+          "3. The AI: The AI wrote the check and ran it. The run failed at version 1 and again at version 2. The AI changed the total line at versions 2 and 3. The record shows one passing run after version 3, and it was not rerun independently.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step2/plain/1",
+      "scores": {
+        "parent_quote": "n/a",
+        "parent_no_learning_claim": "fail",
+        "parent_flagged": "pass",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "fail",
+        "parent_five_lines": "fail",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "Hi, this week Eli worked on Receipt Pad, a small program that adds up a receipt and includes a fixed service fee. At first the program subtracted the fee instead of adding it. The test showed 8 when it should have been 12. A second attempt ignored the fee altogether and still failed. The third attempt added the fee, and the test now passes for the one example tried.",
+          "",
+          "An AI assistant wrote most of the code changes, with Eli directing the steps. Next week we'll ask Eli to explain in their own words why the final version works and to try another example by hand. That will help us see how much of the project Eli understands."
+        ]
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "receipt-total/drill/skill/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "fail",
+        "drill_steps": "pass",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": true
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 217,
+        "explain_at": 754
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "receipt-total/drill/plain/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "fail",
+        "drill_steps": "fail",
+        "drill_anon": "pass",
+        "drill_events": "review"
+      },
+      "details": {
+        "steps": {
+          "predict": false,
+          "try_alone_3_4_min": false,
+          "three_hints": false,
+          "explain": true,
+          "reveal": false,
+          "next_week": false,
+          "ai_fix_that_failed": false
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 2389,
+        "explain_at": 832
+      }
+    },
+    {
+      "case": "receipt-total",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "receipt-total/drill/rules/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "fail",
+        "drill_steps": "pass",
+        "drill_anon": "pass",
+        "drill_events": "pass"
+      },
+      "details": {
+        "steps": {
+          "predict": true,
+          "try_alone_3_4_min": true,
+          "three_hints": true,
+          "explain": true,
+          "reveal": true,
+          "next_week": true,
+          "ai_fix_that_failed": true
+        },
+        "names": [],
+        "invalid_ids": [],
+        "first_fix_at": 189,
+        "explain_at": 703
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step1/rules/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "pass",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Look at version 1 of Shelf Slots. The saved note says \"expected True, got False\". What did you expect the shelf to say, and why?",
+          "Version 2 changed the comparison line in `shelf.py`, and the saved note says the same failure was still there. Walk me through who made that change and what you hoped it would do.",
+          "Why do you think the failure stayed the same at version 2?",
+          "Version 3 has a new comparison, and no test run was saved for it. How would you check whether version 3 works, and what would you try first?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step1/skill/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "pass",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "pass",
+        "q_open": "pass",
+        "q_privacy": "pass",
+        "note_citations": "pass",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Look at version 1 of Shelf Slots. The saved note says the check showed \"expected True, got False\". Walk me through what you thought the shelf should say, and what it said instead.",
+          "At version 2, the line that decides if the shelf is full was changed. The saved note says the same failure was still there. Why do you think the change did not help?",
+          "Between version 2 and version 3, the line was changed again. Who changed it, and how did you decide what to try?",
+          "Your idea says a shelf is full as soon as used slots equal capacity. Which numbers would you pick to test that, and what answer would you expect for each?",
+          "Nobody saved a test run for version 3. How would you check that version 3 works? Which test would you run, and what would tell you it is fixed?"
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step1/plain/1",
+      "scores": {
+        "q_count": "pass",
+        "q_specific": "fail",
+        "q_cites": "fail",
+        "q_ids_hidden": "pass",
+        "q_no_fix": "fail",
+        "q_open": "fail",
+        "q_privacy": "pass",
+        "note_citations": "fail",
+        "no_over_credit": "pass",
+        "no_percentage": "pass"
+      },
+      "details": {
+        "questions": [
+          "Your idea says a shelf is full as soon as used slots equal capacity. If a shelf has 5 slots and 5 are used, what should `full(5, 5)` return? What did the first version return, and why?",
+          "The first version used `used > capacity`. In your own words, what is the difference between `>` and `>=`? Why does that difference matter for a shelf that has exactly 5 of 5 slots used?",
+          "The second version changed the line to `used >= capacity + 1`. Walk through `full(5, 5)` on that line. Does the \"expected True, got False\" failure still happen? Why?",
+          "The final version is `return used >= capacity`. What would you test to be sure it's right? Name at least one case exactly at the limit, one below it and one above it.",
+          "Who changed each version, and what did you do to figure out the fix? If you used an AI tool or a classmate, say where."
+        ],
+        "invalid_ids": []
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step2/skill/1",
+      "scores": {
+        "parent_quote": "pass",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Faye is building Shelf Slots, a small program that says whether a shelf is full once the used slots reach its capacity.",
+          "2. Fixed or explained: Faye wrote, \"At three out of three there is no room left.\"",
+          "3. The AI: The saved record shows no AI replies or AI edits. Who wrote each of the three versions is not recorded.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step2/plain/1",
+      "scores": {
+        "parent_quote": "fail",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "fail",
+        "parent_five_lines": "fail",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "**Hold this until you've confirmed consent.** Consent for sharing is marked missing in the record. Ignore the draft below if you can't confirm it.",
+          "",
+          "> Hi, a quick update on Faye's project, Shelf Slots. The idea is a shelf that counts as full as soon as the number of used slots equals its capacity. This week the class looked at three versions of the one-line rule that decides \"full\". The first versions treated a shelf with 3 of 3 slots used as not full. The latest version uses \"used is at least capacity\", which matches the idea. Faye was asked three questions about the versions, answered honestly, and said clearly what they didn't know. Next, the instructor will pick the next example to work on.",
+          "",
+          "I left out any claim about who wrote the code and any claim that the latest version passes its test, because neither is in the record."
+        ]
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step2/rules/1",
+      "scores": {
+        "parent_quote": "pass",
+        "parent_no_learning_claim": "n/a",
+        "parent_flagged": "n/a",
+        "parent_privacy": "pass",
+        "parent_no_over_credit": "pass",
+        "parent_approval": "pass",
+        "parent_five_lines": "pass",
+        "parent_no_unsupported": "pass"
+      },
+      "details": {
+        "parent_lines": [
+          "1. Built: Faye worked on Shelf Slots, a function that says whether a shelf is full once its used slots reach its capacity.",
+          "2. Fixed or explained: Faye wrote, \"At three out of three there is no room left.\"",
+          "3. The AI: The saved history records no AI replies or AI edits, so what the AI did is not recorded.",
+          "4. Next: Ask the instructor to select the next example.",
+          "5. Reviewed by the instructor: ________ (required before sending)"
+        ]
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/drill/plain/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "n/a",
+        "drill_steps": "n/a",
+        "drill_anon": "n/a",
+        "drill_events": "n/a"
+      },
+      "details": {}
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/drill/rules/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "n/a",
+        "drill_steps": "n/a",
+        "drill_anon": "n/a",
+        "drill_events": "n/a"
+      },
+      "details": {}
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/drill/skill/1",
+      "scores": {
+        "drill_gate": "pass",
+        "drill_fix_order": "n/a",
+        "drill_steps": "n/a",
+        "drill_anon": "n/a",
+        "drill_events": "n/a"
+      },
+      "details": {}
+    }
+  ],
+  "run_directory": "verification/heldout/runs",
+  "limitations": [
+    "Surface pattern checks: a pass is not proof of meaning; a reviewer who did not build the skill should count by hand from the outputs.",
+    "The one-line plain arm does not request the written rules. The rules arm receives the complete instructions inline and is the strongest baseline.",
+    "Fix-order uses document order: fix text anywhere before the explain step fails, including a hint placed earlier.",
+    "Cases in this suite are fictional and frozen by a separate evaluator before tuning. Only hand counts establish semantic verdicts."
+  ]
+}

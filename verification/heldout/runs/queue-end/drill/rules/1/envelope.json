@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Debug Drill · 10 minutes\nStatus: Draft for the instructor. Anonymised. Classroom agreement: yes.\n\n## 1. On the board (1 min)\nA classmate's waiting-list app should serve the person who arrived first. The list is written in arrival order, so `'red'` arrived first and `'blue'` arrived second.\n\n```python\ndef serve(items):\n    return items.pop()\n```\n\nRun: `serve(['red', 'blue'])`. The result is not shown.\n\n## 2. Predict first (1 min)\nBefore anyone runs it: what will `serve(['red', 'blue'])` give back? Write your guess down.\n\n## 3. What happened (1 min)\nThe recorded check failed with: `FAIL expected 'red', got 'blue'`. Compare it with your guess.\n\n## 4. Try it alone (3-4 min)\nFind the line that causes this. No AI and no talking yet.\n\n## 5. Write one sentence: why did it break? (1 min)\nEveryone writes one sentence before any fix is shown.\n\n## 6. Hint ladder (adult only)\nFor students stuck in step 4, one at a time, about a minute apart:\n1. Where to look: the second line of the code, the one that hands back an item.\n2. Trace or compare: in `['red', 'blue']`, which item arrived first? Which item does that line hand back? Does the line pick the item you expected?\n\nOnly after everyone has written their sentence in step 5:\n\n3. The fix: `pop()` with nothing in the brackets takes the last item in the list. To serve the earliest arrival, take the item at position 0: `items.pop(0)`.\n\n## 7. Reveal: what the classmate actually did (2 min)\n1. The classmate described the rule (the earliest arrival is served first). They asked the AI to write a small check for `serve(['red', 'blue'])` [prompt:1].\n2. The AI wrote the check file [tool:test-write]. The AI then ran it, and the recorded result was `FAIL expected 'red', got 'blue'` [tool:test-1][result:test-1].\n3. The first version of the code used `items.pop()`. The history does not show who wrote it [snapshot:1:queue.py]. The record shows no explanation of the cause from the AI.\n4. The classmate asked the AI to \"try a change\" [prompt:2]. The AI edited the line to `items[-1]` [tool:edit-2][result:edit-2][snapshot:2:queue.py].\n5. The AI ran the check again. The recorded result was `FAIL version 2 still does not meet the expected result.` [tool:test-2][result:test-2]\n   - Adult note, from reading the code and not from the record: `items[-1]` also picks the last item. The AI changed how the line was written but not which item it picks.\n6. The classmate asked for \"the next change\" [prompt:3]. The AI edited the line to `items.pop(0)` [tool:edit-3][result:edit-3][snapshot:3:queue.py].\n7. The AI ran the check again and recorded `PASS one fictional example, exit code 0` [tool:test-3][result:test-3]. This is a recorded report, not a rerun.\n\nAsk the class: why did the first AI change fail while the second one worked?\n\n## 8. Next week\nVariant: a ticket line app should call the person who has waited longest.\n\n```python\ndef call_next(line):\n    return line.pop()\n```\n\nRun: `call_next(['first', 'second', 'third'])`, where `'first'` joined the line earliest.\n\nAnswer for the adult: it returns `'third'`, the last item, instead of `'first'`. This is the same cause as the original bug. The fix is `line.pop(0)`. A tempting wrong fix is `line[-1]`, which still picks the last item.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2535,
+      "cacheReadInputTokens": 35055,
+      "cacheCreationInputTokens": 33544,
+      "webSearchRequests": 0,
+      "costUSD": 0.1630395,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 943,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33544,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33544,
+    "cache_read_input_tokens": 35055,
+    "output_tokens": 2535,
+    "output_tokens_details": {
+      "thinking_tokens": 943
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33544,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2173,
+        "cache_read_input_tokens": 31779,
+        "cache_creation_input_tokens": 5041,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5041
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.1630395,
+  "duration_ms": 21615,
+  "duration_api_ms": 19765,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Dara is building Gallery Shelf, where a gallery should accept a photo tag whatever its letter case.\n2. Fixed or explained: Dara asked the AI to write a small check for the tag, then asked it for a change at version 2 and another at version 3. The instructor will go over the fix with Dara.\n3. The AI: The AI wrote the check and made the changes to the tag code at versions 2 and 3. The record shows the check failing after version 2 and passing after version 3. These are recorded reports, not reruns.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- Q1: The answer is \"I do not know\", so it counts as missing. History: the version 1 check failed with \"expected True, got False\" [result:test-1]. The AI wrote the check file [tool:test-write], but the record doesn't say who ran it [tool:test-1]. Go over this with Dara.\n- Q2: The answer is \"idk\", so it counts as missing. History: the AI changed the line at version 2 [snapshot:2:gallery.py][tool:edit-2][result:edit-2], and the test still failed [result:test-2]. Go over this with Dara.\n- Q3: The answer is the placeholder \"[not answered]\", so it is missing data. History: the AI changed the line at version 3 [snapshot:3:gallery.py][tool:edit-3][result:edit-3]. A pass was reported [result:test-3]. The record doesn't show the student taking part in the code change.\n- No answer is Dara's own, so the family note quotes nothing.\n- Version 1's code has an unknown writer [snapshot:1:gallery.py]. Don't credit it to Dara or to the AI.\n- Consent for public drafts is recorded as missing. Don't publish the showcase notes until you have it.\n- No answers show signs of pasted AI text, personal details or embedded instructions.\n\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\nNo answers can be shown yet. Your three answers are \"I do not know\", \"idk\" and \"[not answered]\". Your instructor will go over versions 1, 2 and 3 with you. After that, you can write answers in your own words, and they will go on this page.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 1833,
+      "cacheReadInputTokens": 35174,
+      "cacheCreationInputTokens": 34064,
+      "webSearchRequests": 0,
+      "costUSD": 0.1581114,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 543,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 34064,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 34064,
+    "cache_read_input_tokens": 35174,
+    "output_tokens": 1833,
+    "output_tokens_details": {
+      "thinking_tokens": 543
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 34064,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1348,
+        "cache_read_input_tokens": 31898,
+        "cache_creation_input_tokens": 5442,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5442
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.1581114,
+  "duration_ms": 20440,
+  "duration_api_ms": 14046,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

@@ -1,0 +1,397 @@
+{
+  "suite": "build-checkin",
+  "kind": "claude",
+  "model": "sonnet",
+  "runs_per_case": 1,
+  "tasks": [
+    "step1",
+    "step2",
+    "drill"
+  ],
+  "arms": [
+    "skill",
+    "plain",
+    "rules"
+  ],
+  "expected_total": 54,
+  "runs": [
+    {
+      "case": "queue-end",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "queue-end/step1/skill/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "queue-end/step1/plain/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "queue-end/step1/rules/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "queue-end/step2/plain/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "queue-end/step2/rules/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "queue-end/step2/skill/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "queue-end/drill/rules/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "queue-end/drill/skill/1"
+    },
+    {
+      "case": "queue-end",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "queue-end/drill/plain/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "garden-units/step1/plain/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "garden-units/step1/rules/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "garden-units/step1/skill/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "garden-units/step2/rules/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "garden-units/step2/skill/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "garden-units/step2/plain/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "garden-units/drill/skill/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "garden-units/drill/plain/1"
+    },
+    {
+      "case": "garden-units",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "garden-units/drill/rules/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "map-offset/step1/rules/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "map-offset/step1/skill/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "map-offset/step1/plain/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "map-offset/step2/skill/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "map-offset/step2/plain/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "map-offset/step2/rules/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "map-offset/drill/plain/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "map-offset/drill/rules/1"
+    },
+    {
+      "case": "map-offset",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "map-offset/drill/skill/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step1/skill/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step1/plain/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step1/rules/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step2/plain/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step2/rules/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "gallery-case/step2/skill/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "gallery-case/drill/rules/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "gallery-case/drill/skill/1"
+    },
+    {
+      "case": "gallery-case",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "gallery-case/drill/plain/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step1/plain/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step1/rules/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step1/skill/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step2/rules/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step2/skill/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "receipt-total/step2/plain/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "receipt-total/drill/skill/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "receipt-total/drill/plain/1"
+    },
+    {
+      "case": "receipt-total",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "receipt-total/drill/rules/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step1/rules/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step1/skill/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step1/plain/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step2/skill/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step2/plain/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/step2/rules/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/drill/plain/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/drill/rules/1"
+    },
+    {
+      "case": "shelf-boundary",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "shelf-boundary/drill/skill/1"
+    }
+  ]
+}

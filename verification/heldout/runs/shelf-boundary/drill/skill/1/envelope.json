@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Debug Drill\nStatus: Drill blocked. The family's classroom agreement is missing. Ask the family before using this bug in class.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 540,
+      "cacheReadInputTokens": 39757,
+      "cacheCreationInputTokens": 35862,
+      "webSearchRequests": 0,
+      "costUSD": 0.15283170000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 0,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 35862,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 35862,
+    "cache_read_input_tokens": 39757,
+    "output_tokens": 540,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 35862,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 46,
+        "cache_read_input_tokens": 35809,
+        "cache_creation_input_tokens": 4001,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4001
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.15283170000000001,
+  "duration_ms": 8146,
+  "duration_api_ms": 5121,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

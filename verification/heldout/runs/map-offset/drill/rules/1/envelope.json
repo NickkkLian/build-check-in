@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Debug Drill · 10 minutes\nStatus: Draft for the instructor. Anonymised. Classroom agreement: yes.\n\n## 1. On the board (1 min)\nA route picker should return the point at the selected zero-based index. Zero-based means the first item is index 0.\n\n```python\ndef pick(points, index):\n    return points[index + 1]\n```\n\nRun (the example list is made up for class; it is not recorded in the classmate's history):\n`points = [\"lake\", \"hill\", \"bridge\"]`, then `pick(points, 0)`.\n\n## 2. Predict first (1 min)\nBefore anyone runs it: what will `pick(points, 0)` give back? Write your guess down.\n\n## 3. What happened (1 min)\nThe history records no failing test or error output. The classmate reported: \"got hill instead of lake.\" Compare it with your guess.\n\n## 4. Try it alone (3-4 min)\nFind the line that causes it. No AI and no talking yet.\n\n## 5. Write one sentence: why did it break? (1 min)\nEveryone writes one sentence before any fix is shown.\n\n## 6. Hint ladder (adult only)\nFor students stuck in step 4, one at a time, about a minute apart:\n1. Where to look: the `return` line. It is the only line that picks an item.\n2. Trace or compare: when `index` is 0, which place in the list does the expression inside the square brackets point to? Is that the place the app is supposed to use?\n\nOnly after everyone has written their sentence in step 5:\n\n3. The fix: the extra `+ 1` shifts every pick one place along. Return `points[index]`.\n\n## 7. Reveal: what the classmate actually did (2 min)\n1. Version 1 returned `points[index + 1]`. [snapshot:1:map.py]\n2. The classmate reported getting \"hill instead of lake.\" [prompt:1]\n3. Version 2 changed the line to `points[1 + index]`. This only swaps the order of the two numbers, so the position picked stays the same. [snapshot:2:map.py] Who made this change is not recorded.\n4. The classmate then reported it \"still gives the same point\" and asked for the bug to be explained before changing anything. [prompt:2] No reply to that request is recorded.\n5. Version 3 changed the line to `points[index]`. [snapshot:3:map.py] The classmate said they did not record who made this change or any test run. [prompt:3] So who made the fix and whether it was tested are both unknown.\n\n## 8. Next week\nVariant: a stop-list screen shows the stop at a zero-based position.\n```python\ndef show_stop(stops, position):\n    return stops[position + 1]\n```\nRun `show_stop([\"gate\", \"cafe\", \"pier\"], 0)` and ask what comes back and why.\nAnswer for the adult: it returns \"cafe\" instead of \"gate\". The same cause is in a new place: the `+ 1` moves the pick one place along in a zero-based list. The fix is `stops[position]`.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 2214,
+      "cacheReadInputTokens": 70636,
+      "cacheCreationInputTokens": 32556,
+      "webSearchRequests": 0,
+      "costUSD": 0.15943960000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 640,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 32556,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 32556,
+    "cache_read_input_tokens": 70636,
+    "output_tokens": 2214,
+    "output_tokens_details": {
+      "thinking_tokens": 640
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 32556,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1509,
+        "cache_read_input_tokens": 35582,
+        "cache_creation_input_tokens": 250,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 250
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 6,
+  "total_cost_usd": 0.15943960000000001,
+  "duration_ms": 19231,
+  "duration_api_ms": 16878,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

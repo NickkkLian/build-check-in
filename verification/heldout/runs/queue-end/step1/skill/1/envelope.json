@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 1\nStatus: Draft for the instructor. Print only the Student questions part for the student.\n\n## Student questions\nAnswer in your own words. No AI for this page. Short answers are fine.\n1. Your first prompt asked the AI to write a small check for the list red, blue. What did you expect the check to show, and why?\n2. The first test run said \"FAIL expected 'red', got 'blue'\". What did you think that message meant when you saw it?\n3. At version 2 you asked the AI to \"try a change\", and the AI changed the line. The test still failed. Why do you think that didn't help?\n4. Your third prompt said \"make the next change for version 3\". What did you look at or think about before you asked again?\n5. The last run said PASS for one example. What else would you check before you trust your waiting list?\n\n## Instructor key\nQ1 [prompt:1][tool:test-write]: A good answer mentions the idea that the earliest arrival (red, who came first) should be served first. Whatever the student says, the check was written by the AI (the file write is recorded; its result is \"File written.\", outcome unknown).\nQ2 [result:test-1][snapshot:1:queue.py]: A good answer mentions that the list gave back the wrong person: blue, the later arrival, instead of red, the first one. It may mention that the version 1 line took from the wrong end of the list. Who wrote that version 1 line is unknown.\nQ3 [prompt:2][tool:edit-2][result:test-2][snapshot:2:queue.py]: A good answer mentions that the AI's version 2 change still picked the last item, so it still gave the wrong person, just written in a different way. Answers that say the change looked different but did the same job are the strongest. The failure message is only \"FAIL version 2 still does not meet the expected result.\"\nQ4 [prompt:3][result:test-2]: A good answer mentions something the student saw or thought after the second failure, such as re-reading the message or the list order. The history records only a short prompt, so any account of their own thinking comes from the student alone.\nQ5 [result:test-3][snapshot:3:queue.py]: A good answer mentions trying other lists, such as a different order, one item, or several names, and checking that the first arrival is served. The recorded pass covers one fictional example only.\n\n## Private AI contribution note\nAI contribution: The AI wrote the check file [tool:test-write], made the version 2 edit to `queue.py` [tool:edit-2][snapshot:2:queue.py] and the version 3 edit [tool:edit-3][snapshot:3:queue.py], and each edit matches the diff (`ai_record_matches_diff`). The student prompts are short and ask for a check and for \"a change\" [prompt:1][prompt:2][prompt:3]. The version 1 `queue.py` lines are unknown (`unknown_or_conflicting`) [snapshot:1:queue.py]. No student hand edits are reported.\nInstructor check: Test results are recorded reports, not reruns. The history records two failures [result:test-1][result:test-2] and one reported pass on one fictional example [result:test-3]. The history shows no AI explanation text, so do not assume the student received one. Versions are ordered by the folder names staff supplied, and the timestamps do not prove the order [snapshot:1:queue.py]. There are no staff claims in the context. Consent for public drafts is missing, so nothing here is for sharing outside the instructor.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 1961,
+      "cacheReadInputTokens": 38068,
+      "cacheCreationInputTokens": 38535,
+      "webSearchRequests": 0,
+      "costUSD": 0.17756480000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 474,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 38535,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 38535,
+    "cache_read_input_tokens": 38068,
+    "output_tokens": 1961,
+    "output_tokens_details": {
+      "thinking_tokens": 474
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 38535,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1587,
+        "cache_read_input_tokens": 35775,
+        "cache_creation_input_tokens": 5053,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5053
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.17756480000000002,
+  "duration_ms": 18925,
+  "duration_api_ms": 15213,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

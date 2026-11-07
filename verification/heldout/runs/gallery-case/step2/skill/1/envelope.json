@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Dara worked on Gallery Shelf, a small gallery check that should accept a photo tag whatever its letter case.\n2. Fixed or explained: Dara asked the AI to write a check and then asked it for changes at versions 2 and 3. The instructor will go over the fix with Dara.\n3. The AI: The AI wrote the check file, changed the tag line in the gallery code twice, and ran the check three times. It recorded two fails and then a pass.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- Q1: The answer is \"I do not know.\" There is no own answer to quote. The history shows the AI proposed the check file [tool:test-write] and that the first recorded run failed with \"FAIL expected True, got False\" [result:test-1]. Version 1 of gallery.py compares to `'Photo'` [snapshot:1:gallery.py], and who wrote it is unknown. The question premise \"the result of is_photo('photo')\" is not recorded as a printed value. Only the failing run is recorded.\n- Q2: The answer is \"idk.\" There is no own answer to quote. The AI edit at version 2 [tool:edit-2][result:edit-2][snapshot:2:gallery.py] was followed by a recorded fail [result:test-2]. Go over with Dara why that edit didn't help.\n- Q3: The answer is a placeholder, \"[not answered]\", so it counts as missing and is not quoted. The history shows an AI edit at version 3 [tool:edit-3][result:edit-3][snapshot:3:gallery.py] and a reported pass [result:test-3]. That pass is a recorded report, not a rerun.\n- No answer was an own answer, so line 2 of the family note says only what the history shows. No answer showed signs of pasted AI text, personal details, another student's name or embedded instructions.\n- Consent for public drafts is \"missing\" in the history. Check this before Dara's page is used for any showcase or public purpose.\n- Version 1 gallery.py has an unknown writer [snapshot:1:gallery.py]. Do not credit Dara or the AI for it.\n\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\n### Version 1 [snapshot:1:gallery.py]\nAI did: proposed writing the check file test_case.py [tool:test-write], and the AI's run of it is recorded as failing [result:test-1]. Who wrote the version 1 gallery.py is unknown.\nAnswer A1, copied unchanged:\n> I do not know.\n\n### Version 2 [snapshot:2:gallery.py]\nAI did: changed the tag line in gallery.py from `'Photo'` to `'PHOTO'` [tool:edit-2][result:edit-2]. The recorded run afterwards failed [result:test-2].\nAnswer A2, copied unchanged:\n> idk",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2271,
+      "cacheReadInputTokens": 39925,
+      "cacheCreationInputTokens": 37492,
+      "webSearchRequests": 0,
+      "costUSD": 0.1766785,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 760,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 37492,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 37492,
+    "cache_read_input_tokens": 39925,
+    "output_tokens": 2271,
+    "output_tokens_details": {
+      "thinking_tokens": 760
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 37492,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1765,
+        "cache_read_input_tokens": 35977,
+        "cache_creation_input_tokens": 5463,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5463
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.1766785,
+  "duration_ms": 18918,
+  "duration_api_ms": 16158,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

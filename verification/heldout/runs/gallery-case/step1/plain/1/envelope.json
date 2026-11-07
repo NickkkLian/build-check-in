@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "Everything below comes from the build log. The log doesn't verify any of it, and I haven't re-run anything.\n\n**Consent flags**\n- Consent for public drafts is missing, so none of this should be posted publicly.\n- Dara withdrew consent for classroom drills. Use the questions below one-on-one or in writing, not as a cold-call in front of the class.\n- There is no live link, so I haven't claimed the project is deployed.\n\n## 1. Questions for Dara\n\n1. In your own words, what should `is_photo` return for `'photo'`, `'Photo'` and `'PHOTO'`? Why?\n2. Version 1 compared against `'Photo'`, and the check failed. Why did a check for `'photo'` fail against that code?\n3. Version 2 swapped `'Photo'` for `'PHOTO'` and still failed. Before you ran it, would you have predicted that? What does that fix still get wrong?\n4. What does `tag.lower()` do, and why does comparing against lowercase `'photo'` make letter case stop mattering?\n5. Your passing run tested one example. Name two other tags you would test next, such as `'pHoTo'`, `'photos'` or an empty string. What should each return?\n\n## 2. Note for the instructor: how much the AI did\n\n- **The AI made both recorded code changes.** The version 2 edit (`'Photo'` to `'PHOTO'`) and the version 3 edit (`tag.lower() == 'photo'`) each appear as AI edits in the session record, and each matches the file snapshots.\n- **Version 1's origin is unknown.** The first `gallery.py` snapshot has no matching AI edit. It could be Dara's, the AI's or staff's, and the log can't say.\n- **Dara's visible input was three short prompts.**\n  - Prompt 1 stated the goal and asked for a check.\n  - Prompts 2 and 3 were \"Please try a change for version 2\" and \"Please make the next change for version 3\". They don't show Dara choosing or reasoning about the fix.\n  - Any manual edits or reasoning outside the log would be self-reported.\n- **The AI diagnosed the problem.** Its one explanation was \"The comparison is case-sensitive and the stored literal uses different case.\" The log shows no explanation from Dara.\n- **Verification is thin.**\n  - Two runs failed, then one run reported a pass on a single example.\n  - These are recorded tool outputs, not independent reruns.\n  - The recorded write of `test_case.py` contains only a comment line, and `test_case.py` isn't in the project folder I was given. I can't confirm what the check actually tested.\n  - The final `gallery.py` does match the version 3 snapshot.\n- **Don't read this as an AI percentage.** Two of the four changed-line records match AI edits and two are unknown. That is a count of changed lines, not who owns the final code.\n- **Suggested follow-up:** have Dara explain the question 3 and 4 answers aloud or in writing. That shows whether the understanding is hers, whatever the log says.\n\n## 3. Weekly update for parents\n\nHi, here is this week's update on Dara's project, Gallery Shelf.\n\nDara is building a small piece of a photo gallery. It should recognise a \"photo\" tag whether it's typed as `photo`, `Photo` or `PHOTO`.\n\nThis week the first two attempts didn't work. The third attempt worked on the one example it was tested on. The fix converts the tag to lowercase before comparing it. Dara used an AI assistant for this, and the code changes in the record were made by the assistant. Dara's next step is to talk through why the fix works and to test more kinds of tags. We'll ask the instructor to pick the next example.\n\nThis project isn't online yet.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 2421,
+      "cacheReadInputTokens": 62370,
+      "cacheCreationInputTokens": 30034,
+      "webSearchRequests": 0,
+      "costUSD": 0.15059499999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 338,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 30034,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 30034,
+    "cache_read_input_tokens": 62370,
+    "output_tokens": 2421,
+    "output_tokens_details": {
+      "thinking_tokens": 338
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 30034,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1520,
+        "cache_read_input_tokens": 32843,
+        "cache_creation_input_tokens": 467,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 467
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 8,
+  "total_cost_usd": 0.15059499999999998,
+  "duration_ms": 24378,
+  "duration_api_ms": 20971,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

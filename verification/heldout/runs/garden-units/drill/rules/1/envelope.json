@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Debug Drill · 10 minutes\nStatus: Draft for the instructor. Anonymised. Classroom agreement: anonymised.\n\n## 1. On the board (1 min)\nA classmate's small app should turn litres into millilitres.\n\n```python\ndef millilitres(litres):\n    return litres * 100\n```\n\nRun: `millilitres(2)`\n\n## 2. Predict first (1 min)\nBefore anyone runs it: what number will `millilitres(2)` give back? Write your guess down.\n\n## 3. What happened (1 min)\nThe classmate's recorded test run printed: `FAIL expected 2000, got 200`. Compare it with your guess.\n\n## 4. Try it alone (3-4 min)\nFind the line that causes it. No AI and no talking yet.\n\n## 5. Write one sentence: why did it break? (1 min)\nEveryone writes one sentence before any fix is shown.\n\n## 6. Hint ladder (adult only)\nFor students stuck in step 4, one at a time, about a minute apart:\n1. Where to look: the code is only one line long, so look at the line inside the function that does the maths.\n2. Trace or compare: Work out by hand how many millilitres 1 litre should be. Then follow the code with 1 litre. What does it return, and how do the two numbers compare?\n\nOnly after everyone has written their sentence in step 5:\n3. The fix: change the number the litres are multiplied by from 100 to 1000, so the line reads `return litres * 1000`.\n\n## 7. Reveal: what the classmate actually did (2 min)\n1. The classmate asked the AI for a small check of `millilitres(2)` [prompt:1].\n2. The AI wrote the check file [tool:test-write] and ran it [tool:test-1]. The recorded result was `FAIL expected 2000, got 200` [result:test-1].\n3. The classmate asked the AI to try a change [prompt:2]. The AI edited the line to multiply by 10 instead of 100 [tool:edit-2][result:edit-2][snapshot:2:water.py].\n4. The AI ran the check again. The recorded result was a fail: \"version 2 still does not meet the expected result\" [result:test-2]. Making the number smaller moved the answer further from 2000, not closer.\n5. The classmate reported changing the line by hand to multiply by 1000 [prompt:3]. The next version's file matches that report [snapshot:3:water.py]. Because it is the classmate's report, it is not proof of who typed it.\n6. A run is recorded as passing one example with exit code 0 [result:test-3]. It is a recorded report, not a rerun by us, and the history does not show who ran it.\n\n## 8. Next week\nA different app with the same cause in a new place. A classmate's distance converter should turn kilometres into metres:\n\n```python\ndef metres(km):\n    return km * 100\n```\n\nRun `metres(3)` and the check expects 3000. Answer for the adult: the multiplier is wrong. 1 km is 1000 m, so the line needs `km * 1000`; the current line returns 300. Students who try `* 10` should see it move the answer the wrong way, as in the reveal.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2365,
+      "cacheReadInputTokens": 35054,
+      "cacheCreationInputTokens": 33263,
+      "webSearchRequests": 0,
+      "costUSD": 0.1602154,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 973,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33263,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33263,
+    "cache_read_input_tokens": 35054,
+    "output_tokens": 2365,
+    "output_tokens_details": {
+      "thinking_tokens": 973
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33263,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2003,
+        "cache_read_input_tokens": 31778,
+        "cache_creation_input_tokens": 4761,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4761
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.1602154,
+  "duration_ms": 23166,
+  "duration_api_ms": 20030,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

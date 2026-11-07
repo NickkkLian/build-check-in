@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 1\nStatus: Draft for the instructor. Print only the Student questions part for the student.\n\n## Student questions\nAnswer in your own words. No AI for this page. Short answers are fine.\n1. Your first prompt asked the AI to write a small check for your project. The AI ran it and it printed \"FAIL expected 2000, got 200\". What did you think that message was telling you?\n2. At version 2 you wrote, \"Please try a change for version 2.\" Why did you ask it that way, and what did you hope the AI would do?\n3. The AI changed one line in water.py at version 2, and then the AI ran the test again. It still failed. Why do you think that change didn't help?\n4. At version 3 you reported changing water.py by hand. Walk me through how you chose what to change.\n5. After version 3, the AI's run reported a pass on one example. What else would you check before you trust it?\n\n## Instructor key\nQ1 [result:test-1][prompt:1]: A good answer mentions that the check wanted 2000 for 2 litres and the code gave 200, so the number coming out was too small. The answer may also mention that the AI wrote and ran the check. The history records the AI writing the test file [tool:test-write] and running it [tool:test-1], but the write result is `unknown` [result:test-write]. The student only asked for it [prompt:1].\nQ2 [prompt:2]: A good answer mentions that the prompt did not say what to change, and gives the student's own reason for leaving it open (for example, trusting the AI to pick, or not knowing yet). There is no single right answer. Note whether the student had a plan of their own.\nQ3 [tool:edit-2][result:test-2][snapshot:2:water.py]: A good answer mentions that the AI's edit moved the multiplier from 100 to 10. That made the output smaller, further from the 2000 the check wanted. Any answer that compares the new output with the expected number is a strong one. The edit result is `unknown` [result:edit-2], and the failure message is only a recorded report [result:test-2].\nQ4 [prompt:3][snapshot:3:water.py]: A good answer mentions comparing the expected number with the output seen earlier [result:test-1], or knowing the litres-to-millilitres relationship, and arriving at the new line. This is the student's report that they made the edit by hand, and the diff matches it. It is not observed. The student may also say the AI's version 2 attempt helped them see which way to go.\nQ5 [result:test-3][prompt:3]: A good answer mentions trying other inputs, such as 0, 1 or a decimal, or running the test themselves rather than relying on the AI's report. The run is a recorded report of one fictional example and not a rerun [result:test-3].\n\n## Private AI contribution note\nAI contribution: The AI wrote a check file [tool:test-write] and proposed running it, with a recorded failure [tool:test-1][result:test-1]. The AI edited the water.py line at version 2 [tool:edit-2][snapshot:2:water.py], and a recorded failure followed [result:test-2]. The student reported changing the line by hand at version 3, and the diff matches [prompt:3][snapshot:3:water.py]. The AI's run then recorded one reported pass [tool:test-3][result:test-3]. Who wrote version 1 of water.py is unknown [snapshot:1:water.py].\nInstructor check: There is no `.git` directory, and version order comes from staff's folder names, not timestamps [snapshot:1:water.py]. The version 3 hand edit is self-reported. The pass at version 3 is a recorded report of one example, not an independent rerun [result:test-3]. The write and edit results are `unknown` [result:test-write][result:edit-2]. The record does not show which version the first test run was against [tool:test-1]. Consent state is `missing`, so no public drafts should come from this history.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2178,
+      "cacheReadInputTokens": 39725,
+      "cacheCreationInputTokens": 36602,
+      "webSearchRequests": 0,
+      "costUSD": 0.1721685,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 538,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 36602,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 36602,
+    "cache_read_input_tokens": 39725,
+    "output_tokens": 2178,
+    "output_tokens_details": {
+      "thinking_tokens": 538
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 36602,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1804,
+        "cache_read_input_tokens": 35777,
+        "cache_creation_input_tokens": 4773,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4773
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.1721685,
+  "duration_ms": 21487,
+  "duration_api_ms": 18196,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

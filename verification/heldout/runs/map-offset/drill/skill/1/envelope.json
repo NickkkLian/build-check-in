@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Debug Drill · 10 minutes\nStatus: Draft for the instructor. Anonymised. Classroom agreement: yes.\n\n## 1. On the board (1 min)\nA classmate's route-picker should return the point at the chosen zero-based position in a list: position 0 is the first point, position 1 is the second, and so on.\n```python\ndef pick(points, index):\n    return points[1 + index]\n```\nRun: `pick([\"lake\", \"hill\", \"park\"], 0)`. The list is an example for class. The history names only \"hill\" and \"lake\", not the full list.\n\n## 2. Predict first (1 min)\nBefore anyone runs it: what will `pick([\"lake\", \"hill\", \"park\"], 0)` give back? Write your guess down.\n\n## 3. What happened (1 min)\nThe classmate reported: got hill instead of lake. The history records no error message or test output. Compare that with your guess.\n\n## 4. Try it alone (3-4 min)\nFind the part of the line that makes the wrong point come back. No AI and no talking yet.\n\n## 5. Write one sentence: why did it break? (1 min)\nEveryone writes one sentence before any fix is shown.\n\n## 6. Hint ladder (adult only)\nFor students stuck in step 4, one at a time, about a minute apart:\n1. Where to look: the single `return` line. Look at what is inside the square brackets.\n2. Trace or compare: if `index` is 0, what number is inside the brackets? Which place in the list does that number point to, and which place did the picker's description say it should return?\n\nOnly after everyone has written their sentence in step 5:\n3. The fix: the `1 +` adds one to the index, so every pick lands one point late. Use `points[index]`, with no added number.\n\n## 7. Reveal: what the classmate actually did (2 min)\n1. Version 1 had `points[index + 1]`. Who wrote it is unknown. [snapshot:1:map.py]\n2. The classmate reported getting \"hill instead of lake\". [prompt:1]\n3. Version 2 changed the line to `points[1 + index]`. This only swaps the order of the two added terms. Who made the change is unknown, and the history records no AI edit for it. [snapshot:2:map.py]\n4. The classmate then reported it \"still gives the same point\" and asked the AI to explain the bug before changing anything. [prompt:2] The AI's reply is not recorded, so we cannot say whether it explained anything.\n5. Version 3 has `points[index]`, with no added number. Who made this change is unknown. The classmate said they did not record who changed it or any test run, so the history shows no passing test. [snapshot:3:map.py][prompt:3]\n6. The history records no AI fix at all, failed or successful. A fix attempt that failed is visible only as the version 2 line, which is still wrong. Its author is unknown.\n\n## 8. Next week\nVariant: a name-picker returns `names[position + 1]`, and the classmate expects the first name when `position` is 0. Ask students to predict, find the cause and write one sentence before any fix. Answer for the adult: the same cause in a new place. The extra `+ 1` moves every pick one place along, so position 0 returns the second name. The fix is `names[position]`.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 2381,
+      "cacheReadInputTokens": 79300,
+      "cacheCreationInputTokens": 35814,
+      "webSearchRequests": 0,
+      "costUSD": 0.17500800000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 722,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 35814,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 35814,
+    "cache_read_input_tokens": 79300,
+    "output_tokens": 2381,
+    "output_tokens_details": {
+      "thinking_tokens": 722
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 35814,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1736,
+        "cache_read_input_tokens": 39584,
+        "cache_creation_input_tokens": 178,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 178
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 6,
+  "total_cost_usd": 0.17500800000000002,
+  "duration_ms": 21454,
+  "duration_api_ms": 19119,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

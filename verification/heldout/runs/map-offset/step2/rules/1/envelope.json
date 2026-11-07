@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Cleo is building Trail Pins, a route picker that should return the point at a chosen position, counting from zero.\n2. Fixed or explained: Cleo told the AI the picker gave \"hill\" instead of \"lake\". Asked about version 2, Cleo wrote: \"I am not sure what that change did.\" The instructor will go over the fix with Cleo.\n3. The AI: Cleo asked the AI to explain the bug. No AI reply, code change or test run is recorded, so this history doesn't show what the AI did.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- Q1: A1 (\"I changed some things.\") doesn't say what the result of `pick(['lake', 'hill', 'gate'], 0)` told Cleo. It also names no change. The history shows version 1 [snapshot:1:map.py] and a report of \"hill instead of lake\" [prompt:1]. The history has no record of who made any change, so don't credit Cleo with one. Ask what Cleo changed and what they expected.\n- Q2: The question assumes the AI explained the bug. Cleo only asked for an explanation [prompt:2]. No AI reply is recorded, so the premise is unsupported. A2 (\"I am not sure what that change did.\") doesn't say what Cleo changed. The version 2 edit [snapshot:2:map.py] has an unknown author, and no hand edit is reported. Ask what Cleo did after asking.\n- Q3: A3 is \"(no answer)\". It is missing data, not Cleo's words. The history says only that version 3 looks different [prompt:3] and that nobody recorded who changed it or any test run. The line change is in [snapshot:3:map.py]. Its author is unknown. Get an answer from Cleo.\n- Family consent for public drafts is missing in the history. Keep this note private until the instructor decides what to share.\n\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\n### Version 1 [snapshot:1:map.py]\nAI did: not recorded\nAnswer A1, copied unchanged:\n> I changed some things.\n\n### Version 2 [snapshot:2:map.py]\nAI did: not recorded\nAnswer A2, copied unchanged:\n> I am not sure what that change did.\n\nVersion 3 has no answer yet (A3 is missing).",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2139,
+      "cacheReadInputTokens": 35162,
+      "cacheCreationInputTokens": 32352,
+      "webSearchRequests": 0,
+      "costUSD": 0.1543222,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 812,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 32352,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 32352,
+    "cache_read_input_tokens": 35162,
+    "output_tokens": 2139,
+    "output_tokens_details": {
+      "thinking_tokens": 812
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 32352,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1650,
+        "cache_read_input_tokens": 31886,
+        "cache_creation_input_tokens": 3742,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3742
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.1543222,
+  "duration_ms": 17314,
+  "duration_api_ms": 16002,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

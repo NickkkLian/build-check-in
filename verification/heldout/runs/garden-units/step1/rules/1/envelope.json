@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 1\nStatus: Draft for the instructor. Print only the Student questions part for the student.\n\n## Student questions\nAnswer in your own words. No AI for this page. Short answers are fine.\n1. Your first prompt asked the AI to write a small check for `millilitres(2)`. What did you want that check to tell you?\n2. At version 1 the AI ran the check and it failed. The message showed two numbers that did not match. What did those two numbers tell you?\n3. Your second prompt was \"Please try a change for version 2.\" The AI changed one line in `water.py`, and the check still failed. Why do you think that change didn't help?\n4. At version 3 you reported changing `water.py` by hand. Walk me through how you decided what to change.\n5. After your change, a run was recorded as passing for one example. What else would you check before you trust that the planner works?\n\n## Instructor key\nQ1 [prompt:1][tool:test-write]: A good answer mentions wanting a quick way to see whether 2 litres gives the right number of millilitres. The history does not record the check's contents beyond a one-line comment, and the result of the write is unknown, so ask what the student expected it to test.\nQ2 [result:test-1]: A good answer mentions that one number was what the check expected and the other was what the code gave. The recorded message was \"FAIL expected 2000, got 200\", so the answer may include that the code's result was too small. Listen for whether the student can say which number is which.\nQ3 [tool:edit-2][result:edit-2][result:test-2][snapshot:2:water.py]: A good answer mentions that the AI's edit still did not give the expected result, so the number it picked was not what was needed. The recorded failure text is vague (\"still does not meet the expected result\"), so also ask what the student saw and whether they looked at the number in the line.\nQ4 [prompt:3][snapshot:3:water.py]: A good answer mentions how the student worked out the change, such as comparing the expected and actual numbers from the earlier failures, or how many millilitres are in a litre. This is a self-report. The history does not show how the student chose it, so the answer is the only evidence of reasoning.\nQ5 [result:test-3]: A good answer mentions trying other values (0, 1, a decimal like 0.5, a larger number) or checking by hand. The recorded pass covers one fictional example only, and the history does not show whether the student reran it.\n\n## Private AI contribution note\nAI contribution: The AI wrote `test_case.py` [tool:test-write] (the write result is unknown [result:test-write]) and ran the check three times [tool:test-1][tool:test-2][tool:test-3]. It changed `water.py` at version 2 from `* 100` to `* 10`, and that edit matches the diff [tool:edit-2][result:edit-2][snapshot:2:water.py]. The student reported changing `water.py` by hand at version 3 to `* 1000`, and the diff matches that report [prompt:3][snapshot:3:water.py]. Who wrote version 1 `water.py` is unknown [snapshot:1:water.py]. The history does not show who found the cause. The version 2 prompt asked the AI to try a change without saying what to change [prompt:2].\nInstructor check:\n- The version 1 `water.py` has unknown or conflicting origin. Do not credit it to the student or the AI [snapshot:1:water.py].\n- The version 3 hand edit is the student's report only. The diff proves the text changed, not who typed it [prompt:3][snapshot:3:water.py].\n- The passing run is a recorded report, not an independent rerun, and covers one example [result:test-3].\n- The failure at version 2 has vague text and no recorded AI explanation [result:test-2].\n- Snapshot order comes from folder names, not timestamps [snapshot:1:water.py].\n- Consent for public drafts is missing, so nothing from this history goes into public material.\n\n## Not produced here\nYou also asked for a weekly update for the parents. That is step 2. It quotes the student's own answers, so run it after Bea answers these questions.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2325,
+      "cacheReadInputTokens": 35076,
+      "cacheCreationInputTokens": 33378,
+      "webSearchRequests": 0,
+      "costUSD": 0.16027760000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 622,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33378,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33378,
+    "cache_read_input_tokens": 35076,
+    "output_tokens": 2325,
+    "output_tokens_details": {
+      "thinking_tokens": 622
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33378,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1870,
+        "cache_read_input_tokens": 31800,
+        "cache_creation_input_tokens": 4854,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4854
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.16027760000000002,
+  "duration_ms": 22261,
+  "duration_api_ms": 18287,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

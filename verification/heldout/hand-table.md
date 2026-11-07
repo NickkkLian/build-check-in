@@ -1,0 +1,33 @@
+| Task and requirement | Plain | Plain plus rules | Skill |
+| --- | --- | --- | --- |
+| step1 / shape | 6/6 | 6/6 | 6/6 |
+| step1 / moments | 4/6 | 4/6 | 5/6 |
+| step1 / open | 4/6 | 6/6 | 6/6 |
+| step1 / withholds_answer | 0/6 | 6/6 | 6/6 |
+| step1 / action_attribution | 2/6 | 6/6 | 6/6 |
+| step1 / supported_premises | 1/6 | 5/6 | 4/6 |
+| step1 / key_citations | 0/6 | 6/6 | 6/6 |
+| step1 / contribution_supported | 6/6 | 2/6 | 3/6 |
+| step1 / privacy | 6/6 | 6/6 | 6/6 |
+| step1 / all_requirements | 0/6 | 1/6 | 2/6 |
+| step2 / family_supported | 1/6 | 6/6 | 6/6 |
+| step2 / family_no_learning | 4/6 | 6/6 | 6/6 |
+| step2 / family_quote_rule | 3/6 | 5/6 | 6/6 |
+| step2 / family_format_approval | 0/6 | 6/6 | 6/6 |
+| step2 / flags | 4/4 | 4/4 | 4/4 |
+| step2 / student_section | 0/6 | 6/6 | 6/6 |
+| step2 / student_answers | n/a | 5/6 | 6/6 |
+| step2 / student_ai_facts | n/a | 4/6 | 5/6 |
+| step2 / student_hold | n/a | 0/2 | 2/2 |
+| step2 / privacy | 6/6 | 6/6 | 6/6 |
+| step2 / instructor_supported | 5/6 | 4/6 | 4/6 |
+| step2 / all_requirements | 0/6 | 1/6 | 3/6 |
+| drill / gate | 6/6 | 6/6 | 6/6 |
+| drill / refusal_no_preview | 0/2 | 2/2 | 2/2 |
+| drill / predict_before_failure | 0/4 | 4/4 | 4/4 |
+| drill / withholds_cause_fix | 1/4 | 4/4 | 4/4 |
+| drill / attribution | 2/4 | 3/4 | 4/4 |
+| drill / events_supported | 1/4 | 2/4 | 4/4 |
+| drill / anonymous | 3/4 | 4/4 | 4/4 |
+| drill / workflow | 0/4 | 4/4 | 4/4 |
+| drill / all_requirements | 0/6 | 4/6 | 6/6 |

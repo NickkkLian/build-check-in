@@ -1,0 +1,6 @@
+/build-checkin
+Mode: check-in step 2.
+The history.json was already produced by the bundled extractor.
+Read <CHECKOUT>/evals/runs/heldout-v1/shelf-boundary/step2/skill/1/work/input/context.json, <CHECKOUT>/evals/runs/heldout-v1/shelf-boundary/step2/skill/1/work/input/history.json, <CHECKOUT>/evals/runs/heldout-v1/shelf-boundary/step2/skill/1/work/input/raw-diffs.md, the files in <CHECKOUT>/evals/runs/heldout-v1/shelf-boundary/step2/skill/1/work/input/project, and <CHECKOUT>/evals/runs/heldout-v1/shelf-boundary/step2/skill/1/work/input/chat.txt.
+The student's answers to the questions, pasted by the instructor: <CHECKOUT>/evals/runs/heldout-v1/shelf-boundary/step2/skill/1/work/input/answers.md
+Produce the skill's complete output directly in your reply.

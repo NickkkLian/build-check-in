@@ -1,0 +1,21 @@
+# Build Check-in · Step 1
+Status: Draft for the instructor. Print only the Student questions part for the student.
+
+## Student questions
+Answer in your own words. No AI for this page. Short answers are fine.
+1. After the AI wrote the check and ran it at version 1, you saw "FAIL expected True, got False". What did you think that message was telling you?
+2. At version 2, you asked the AI to try a change. The AI changed the line, and the test still failed. Why do you think that change didn't help?
+3. Your second prompt was "Please try a change for version 2." Walk me through why you asked it that way and what you hoped the AI would do.
+4. At version 3, the AI changed the line again and the test passed. What would you check yourself to be sure the gallery works for tags other than the one in the test?
+
+## Instructor key
+Q1 [result:test-1][prompt:1]: A good answer mentions that the test the AI wrote and ran at version 1 returned False where True was expected. A good answer shows the student read this as "the check for 'photo' was not accepted yet". The answer may appear here.
+Q2 [result:test-2][tool:edit-2][snapshot:2:gallery.py]: A good answer mentions that version 2 compared against one exact spelling in capital letters, so the lowercase 'photo' from the check still did not match. The answer may appear here. An answer that only says "the AI's change was wrong" with no reason is thin.
+Q3 [prompt:2]: A good answer mentions the student's own goal (the idea of accepting a tag in any letter case) and what they expected from the AI. The prompt names no specific fix, so listen for whether the student had a plan or was handing the AI the decision.
+Q4 [result:test-3][snapshot:3:gallery.py]: A good answer mentions testing other spellings (for example all capitals, mixed case, a non-photo tag) and running them. The recorded pass covers only one fictional example. The student's own idea of a check matters more than the exact list.
+
+## Private AI contribution note
+AI contribution: The AI wrote the check file test_case.py [tool:test-write] and ran the test at version 1, which failed [tool:test-1][result:test-1]. The AI edited gallery.py at version 2 [tool:edit-2][result:edit-2] and the test failed again [result:test-2]. The AI edited gallery.py at version 3 [tool:edit-3][result:edit-3] and the recorded run passed [result:test-3]. Whether the AI or the student wrote the first version of gallery.py is unknown [snapshot:1:gallery.py]. The student's recorded part is three prompts [prompt:1][prompt:2][prompt:3]. No manual edits are reported by the student.
+Instructor check: Tool results are recorded reports, not reruns, and the version 3 pass covers "one fictional example" [result:test-3]. The "File written." and "Edit applied." results do not state their outcome [result:test-write][result:edit-2][result:edit-3]. No AI replies or explanations are recorded, so what the student learned from the AI is not shown. The version order comes from folder names that staff supplied, and timestamps don't prove the order [snapshot:1:gallery.py]. There is no git history, and staff made no claims [context:brief]. Q4 is the best check of whether the student looked past the single passing example.
+
+The weekly parent update is step 2. It quotes the student's own answers, so I haven't written it. Send me the answers after the check-in and I'll draft it then.

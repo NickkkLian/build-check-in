@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 1\nStatus: Draft for the instructor. Print only the Student questions part for the student.\n\n## Student questions\nAnswer in your own words. No AI for this page. Short answers are fine.\n1. At version 1, a test run was recorded in your AI session. It said \"FAIL expected 'red', got 'blue'\". Walk me through what that message told you about your waiting list.\n2. Your second prompt said \"Please try a change for version 2.\" Why did you ask for it that way, and what did you want the AI to do?\n3. At version 2, the AI changed a line in the queue file and the test still failed. Why do you think that change didn't help?\n4. After your third prompt, the AI changed that same line again. What did you see happen, and what did you do next?\n5. A pass was reported for one example, ['red', 'blue']. How would you check that your waiting list really works, and which other example would you try?\n\n## Instructor key\nQ1 [prompt:1][result:test-1]: A good answer mentions that the check expected the first arrival (\"red\") but the code gave back the last one (\"blue\"). It should show Ari saw the order was backwards. Version 1 used `items.pop()`, and the writer of that line is unknown.\nQ2 [prompt:2][tool:edit-2]: A good answer mentions what Ari expected the AI to do. The prompt names no cause and no specific change, so the answer shows whether Ari had an idea of their own or was leaving it to the AI. No AI reply is recorded for this prompt.\nQ3 [snapshot:2:queue.py][result:test-2]: A good answer mentions that version 2 swapped one way of taking the last item for another way of taking the last item, so \"blue\" still came out first. The recorded failure says only \"version 2 still does not meet the expected result.\"\nQ4 [snapshot:3:queue.py][tool:edit-3][result:test-3]: A good answer mentions the third change, which takes the first item, and the reported pass. Ari should say what they saw and what they did next. The history records no student action after the pass.\nQ5 [result:test-3]: A good answer mentions that the pass covers one example only. Ari should name another list, such as three or more items or a one-item list, and what the right first result would be. The history shows no test beyond the one example.\n\n## Private AI contribution note\nAI contribution: The AI session records writing the check file [tool:test-write], running the test twice with failures [result:test-1][result:test-2] and a reported pass [result:test-3]. It records two edits to `queue.py`, at version 2 and version 3, and the diffs match both [snapshot:2:queue.py][tool:edit-2][result:edit-2][snapshot:3:queue.py][tool:edit-3][result:edit-3]. Ari's three prompts are recorded [prompt:1][prompt:2][prompt:3]. The history records no hand edits by Ari. The author of the version 1 code is unknown [snapshot:1:queue.py].\nInstructor check: The pass is a recorded report of one fictional example, not a rerun [result:test-3]. The version order comes from folder names that staff supplied, and timestamps do not prove it [snapshot:1:queue.py]. The record shows no AI replies or explanations. Prompts 2 and 3 are generic and name no cause [prompt:2][prompt:3], so Q2 and Q4 may get \"I don't know\"; treat that as information, not a fault. Consent for public drafts is missing [consent], so keep the step 2 showcase notes private.\n\n**Not produced here:** The weekly parent update is step 2. It has to quote Ari's own answers, so I haven't written it. Paste Ari's answers back to me and I'll draft it. Its \"Next\" line will use the context step: \"Ask the instructor to select the next example.\"",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2206,
+      "cacheReadInputTokens": 35073,
+      "cacheCreationInputTokens": 33678,
+      "webSearchRequests": 0,
+      "costUSD": 0.1602873,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 608,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33678,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33678,
+    "cache_read_input_tokens": 35073,
+    "output_tokens": 2206,
+    "output_tokens_details": {
+      "thinking_tokens": 608
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33678,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1728,
+        "cache_read_input_tokens": 31797,
+        "cache_creation_input_tokens": 5157,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5157
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.1602873,
+  "duration_ms": 22276,
+  "duration_api_ms": 18553,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

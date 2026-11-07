@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Debug Drill · 10 minutes\nStatus: Draft for the instructor. Anonymised. Classroom agreement: anonymised.\n\n## 1. On the board (1 min)\nA receipt app should give the total of the item prices plus one fixed service fee.\n\n```python\ndef total(prices, fee):\n    return sum(prices) - fee\n```\n\nRun: `total([4, 6], 2)`. The prices are 4 and 6, and the service fee is 2.\n\n## 2. Predict first (1 min)\nBefore anyone runs it: what number will `total([4, 6], 2)` give back? Write your guess down.\n\n## 3. What happened (1 min)\nThe check printed: `FAIL expected 12, got 8` [result:test-1]. Compare it with your guess.\n\n## 4. Try it alone (3-4 min)\nFind the line that causes this. No AI and no talking yet.\n\n## 5. Write one sentence: why did it break? (1 min)\nEveryone writes one sentence before any fix is shown.\n\n## 6. Hint ladder (adult only)\nFor students stuck in step 4, one at a time, about a minute apart:\n1. Where to look: the function has only one line that does any work. Look at that line.\n2. Trace or compare: do the line by hand with 4, 6 and 2. What number does each part give? How does the result compare with the 12 the check expected?\n\nOnly after everyone has written their sentence in step 5:\n3. The fix: the line subtracts the fee, but a service fee should be added. Change `- fee` to `+ fee`.\n\n## 7. Reveal: what the classmate actually did (2 min)\n1. The classmate asked the AI to write a small check for `total([4, 6], 2)` [prompt:1]. The AI wrote the check file [tool:test-write] and ran it [tool:test-1]. The recorded result was `FAIL expected 12, got 8` [result:test-1]. Who wrote the original `- fee` line is not recorded [snapshot:1:receipt.py].\n2. The classmate asked the AI to \"try a change\" [prompt:2]. The AI changed the line to `return sum(prices) + 0` [tool:edit-2][result:edit-2][snapshot:2:receipt.py]. This did not use the fee at all.\n3. The AI ran the check again and the recorded result was a failure: \"FAIL version 2 still does not meet the expected result.\" [result:test-2]. That failed fix attempt is worth discussing: the AI changed the line, but the change still did not add the fee.\n4. The classmate asked for the next change [prompt:3]. The AI changed the line to `return sum(prices) + fee` [tool:edit-3][result:edit-3][snapshot:3:receipt.py]. The AI's recorded run reported a pass for the one example: \"PASS one fictional example, exit code 0\" [result:test-3]. This is a recorded report, not a rerun by staff, and it covers only one example.\n\n## 8. Next week\nVariant: a tip function with the same kind of mistake in a new place.\n\n```python\ndef with_tip(prices, tip):\n    return sum(prices) - tip\n```\n\nRun `with_tip([5, 5], 3)`. The board says a tip should be added to the total, so students should expect 13. They predict first, then compare with the actual output.\n\nAnswer for the adult: the function gives 7 instead of 13. The tip is subtracted instead of added. The fix is `return sum(prices) + tip`. Ask students to name the one thing it has in common with this week's bug: a value that should be added is being subtracted.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2399,
+      "cacheReadInputTokens": 35063,
+      "cacheCreationInputTokens": 33618,
+      "webSearchRequests": 0,
+      "costUSD": 0.16197630000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 875,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33618,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33618,
+    "cache_read_input_tokens": 35063,
+    "output_tokens": 2399,
+    "output_tokens_details": {
+      "thinking_tokens": 875
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33618,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2034,
+        "cache_read_input_tokens": 31787,
+        "cache_creation_input_tokens": 5107,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5107
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 4,
+  "total_cost_usd": 0.16197630000000002,
+  "duration_ms": 20928,
+  "duration_api_ms": 18963,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

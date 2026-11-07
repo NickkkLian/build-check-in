@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Exercise: \"The total is too low\" (10 minutes)\n\nThe student consented to classroom use if the exercise is anonymised, so it names no student and no project. Show students only the code, the failing output, and the first two questions. The answer key at the end is for you.\n\n## Setup (1 min)\n\nPut this on the board:\n\n```python\n# receipt.py\ndef total(prices, fee):\n    return sum(prices) - fee\n```\n\nRequirement: *a receipt total must include a fixed service fee.*\n\nA check was run on `total([4, 6], 2)`. It printed:\n\n```\nFAIL expected 12, got 8\n```\n\n## Round 1: Find it (3 min, pairs)\n\n1. Work out by hand what `sum([4, 6])` is, then what the function returns for `fee = 2`. Does that match the \"got 8\" line?\n2. Which single character is wrong, and why does the failure message have the numbers it has?\n\nAsk each pair to say the bug in one sentence before they type anything.\n\n## Round 2: The tempting non-fix (3 min)\n\nA student, or an AI assistant, tries this change:\n\n```python\n    return sum(prices) + 0\n```\n\nThe check now fails again, this time with a vaguer message: `FAIL version 2 still does not meet the expected result.`\n\n3. Work out what `total([4, 6], 2)` returns now. Is it closer to 12 than before?\n4. This change got rid of the minus sign. Why was it still a guess and not a fix?\n5. What should you have done between \"the check failed\" and \"make an edit\"?\n\nThe point to land on: removing the symptom is not the same as understanding the cause. The fee was never used in the second version.\n\n## Round 3: Fix it and doubt the fix (3 min)\n\n6. Write the correct line yourself.\n7. The check now prints `PASS` for `total([4, 6], 2)`. Name one other input where the function could still be wrong. Try `total([], 2)`, `total([4, 6], 0)` and `total([0.1, 0.2], 2)`.\n8. How many examples did \"PASS\" actually cover?\n\n## Debrief (the last minute)\n\nPick one question per pair: *What is the one thing you checked before you changed the code?*\n\n## Answer key (instructor only)\n\n- **Q1–2:** `sum([4, 6])` is 10, and `10 - 2` is 8. The `-` should be `+`. Expected is 10 + 2 = 12.\n- **Q3:** The version 2 function returns 10 (`10 + 0`). That is still wrong, and the fee is ignored entirely.\n- **Q4–5:** Read the failure numbers and compute by hand before editing. The gap of 4 between 8 and 12 is exactly `2 × fee`. That points to a sign error, not a missing fee.\n- **Q6:** `return sum(prices) + fee`\n- **Q7–8:** The PASS covers one example. Ideas for more cases:\n  - An empty list should give just the fee.\n  - A zero fee should give just the sum.\n  - Floating-point amounts may show rounding noise, e.g. 0.30000000000000004 + 2.\n  - Whether the fee should be charged once per receipt, or not at all on an empty one, is a requirements question the code can't answer.\n\n## Notes on the source material\n\n- The log has three versions: a subtraction bug, a `+ 0` non-fix, then the correct `+ fee`. The exercise follows that order.\n- **Caveat on the evidence:** the log's `test_case.py` write contains only a comment line. `test_case.py` is also missing from the project folder, so I couldn't read it. The `FAIL expected 12, got 8` and `PASS` lines are recorded tool output, not something I reran. The arithmetic in this exercise is checkable by hand, but I haven't run the original check. I could only open `receipt.py` directly, because I had no way to list the project folder. If it holds other files, I haven't seen them.\n- **Version order:** the snapshot order comes from folder names, which the history file notes don't prove chronology. The edit prompts in the session log match that order.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 2411,
+      "cacheReadInputTokens": 62279,
+      "cacheCreationInputTokens": 29965,
+      "webSearchRequests": 0,
+      "costUSD": 0.1502099,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 231,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 29965,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 29965,
+    "cache_read_input_tokens": 62279,
+    "output_tokens": 2411,
+    "output_tokens_details": {
+      "thinking_tokens": 231
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 29965,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1505,
+        "cache_read_input_tokens": 32772,
+        "cache_creation_input_tokens": 469,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 469
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 8,
+  "total_cost_usd": 0.1502099,
+  "duration_ms": 22320,
+  "duration_api_ms": 20607,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

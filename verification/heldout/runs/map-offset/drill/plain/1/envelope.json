@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# 10-minute debugging exercise: \"The Off-by-One Pick\"\n\n**Based on:** a bug in a route-picker project where choosing item 0 gave back item 1. The log says only that the result was \"hill instead of lake\". It doesn't show the real data or the test, so the exercise uses new made-up data. Names and code are not copied from the student, and the student's name isn't needed.\n\n**Goal:** students find the bug by checking one case against what they expected before they touch any code.\n\n## Hand-out (students see this)\n\n```python\ndef pick(points, index):\n    return points[index + 1]\n\nstops = [\"lake\", \"hill\", \"bridge\", \"cabin\"]\nprint(pick(stops, 0))   # expected: lake\n```\n\nPrompt: \"The picker is supposed to return the stop at the position you choose, counting from 0. Running it prints `hill`. Don't change anything yet.\"\n\n## Timing\n\n| Min | Step | What students do |\n|---|---|---|\n| 0–2 | Predict | Without running anything, write down what `pick(stops, 2)` returns. Then run it and compare. |\n| 2–5 | Narrow it down | Fill in a table of index, expected and actual for 0, 1, 2 and 3. Students should see that every answer is one place too far. Ask what happens at index 3. |\n| 5–7 | Explain before fixing | Each pair writes one sentence: \"The bug is ___ because ___.\" The sentence has to name the line and say why the answer is shifted. They are not allowed to edit the code yet. |\n| 7–9 | Fix and re-check | Make the one-line fix. Re-run all four indexes from the table, not only index 0. |\n| 9–10 | Debrief | Use the discussion questions below. |\n\n## Facilitator answer key\n\n- **Bug:** `index + 1` shifts every pick one position along. Python lists start at 0, so `points[index]` is correct.\n- **Index 3 crashes with an `IndexError`.** The shift also breaks the last item. The student's \"wrong point\" report is the quieter symptom. This is a good moment to point out that an error message is a free clue.\n- **Common wrong fix:** rewriting `index + 1` as `1 + index`. It looks different but gives the same result. Students who do this are testing whether the code looks different, not whether the output is right. This is the most useful thing to catch in the room. The student's own history shows this exact step (version 1 to 2), followed by \"it still gives the same point\".\n- **Another wrong fix:** `index - 1`. It passes index 1 but returns the wrong point for index 0, because it wraps to the last item. It only looks right when you check one case.\n\n## Debrief questions\n\n1. Why did swapping `index + 1` for `1 + index` change nothing?\n2. Which single check would have told you the bug was a shift and not a one-off wrong answer?\n3. The original report said only \"got hill instead of lake.\" What else would you want written down so a classmate could reproduce it? (Aim for: the input, the expected output and the actual output.)\n\n## Notes for the instructor\n\n- **Consent:** the record says classroom drill use is allowed (\"yes\"). Permission for public drafts is missing, so don't post this exercise, or anything tracing back to the student, outside the class.\n- **Who made which change is unknown.** The log has no record of who edited what or of any test run. The exercise uses only the bug's shape and doesn't say how the student found it.\n- **Not checked:** I haven't run the hand-out code. The behaviour above follows from how Python indexing works. Run it once before class.\n- The `project` folder couldn't be listed with the tool I had. I read `map.py` directly, and it already contains the fixed version (`points[index]`). If the folder holds other files, I haven't seen them.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 2165,
+      "cacheReadInputTokens": 59767,
+      "cacheCreationInputTokens": 27174,
+      "webSearchRequests": 0,
+      "costUSD": 0.1363347,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 219,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 27174,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 27174,
+    "cache_read_input_tokens": 59767,
+    "output_tokens": 2165,
+    "output_tokens_details": {
+      "thinking_tokens": 219
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 27174,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1407,
+        "cache_read_input_tokens": 30263,
+        "cache_creation_input_tokens": 187,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 187
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 7,
+  "total_cost_usd": 0.1363347,
+  "duration_ms": 21612,
+  "duration_api_ms": 18745,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

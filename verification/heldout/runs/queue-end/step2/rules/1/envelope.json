@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Ari is building Queue Board, a waiting list that should serve the earliest arrival first.\n2. Fixed or explained: Ari wrote: \"It gave blue even though red arrived first.\"\n3. The AI: The AI wrote the check file, ran it, and made the edits at version 2 and version 3. The last recorded run reported a pass.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- Q3 (A3): The history contradicts part of this answer. \"The AI made the last edit\" is supported [snapshot:3:queue.py][tool:edit-3][result:edit-3]. But the third prompt reads \"Please make the next change for version 3.\" [prompt:3]. It does not ask the AI to check two names, and no prompt in the history does. Ask Ari what they asked the AI at that step. A3 is not used in the family note.\n- Q2 (A2): This looks like Ari's own answer. It matches version 2, where the AI replaced `items.pop()` with `items[-1]`, which reads an item and does not remove it [snapshot:2:queue.py][tool:edit-2]. The recorded failure at that step is only \"version 2 still does not meet the expected result\" [result:test-2]. You could ask Ari what the version 2 line returned for `['red', 'blue']`.\n- Q1 (A1): This looks like Ari's own answer. It matches the recorded failure \"FAIL expected 'red', got 'blue'\" [result:test-1].\n- The writer of the version 1 `queue.py` is unknown [snapshot:1:queue.py]. The note does not credit Ari or the AI with it.\n- All test results are recorded reports, not reruns [result:test-1][result:test-2][result:test-3]. The \"pass\" is a recorded report only.\n- Consent for public drafts is missing in the history. Do not publish the showcase notes below until the family's agreement is confirmed.\n\nHold: go over answers A3 with the student before giving them this page.\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\n### Version 1 [snapshot:1:queue.py]\nAI did: wrote the check file `test_case.py` and ran it; the recorded result was a fail [tool:test-write][tool:test-1][result:test-1]. Who wrote the version 1 `queue.py` is unknown [snapshot:1:queue.py].\nAnswer A1, copied unchanged:\n> It gave blue even though red arrived first.\n\n### Version 2 [snapshot:2:queue.py]\nAI did: changed the `queue.py` line to `return items[-1]`, then ran the check; the recorded result was a fail [tool:edit-2][result:edit-2][result:test-2].\nAnswer A2, copied unchanged:\n> The second version only reads an item and leaves the list alone.\n\n### Version 3 [snapshot:3:queue.py]\nAI did: changed the `queue.py` line to `return items.pop(0)`, then ran the check; the recorded result was a pass [tool:edit-3][result:edit-3][result:test-3].\nAnswer A3, copied unchanged:\n> The AI made the last edit. I asked it to check the two names again.\n\n(Flagged for the instructor: the history shows otherwise.)",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2903,
+      "cacheReadInputTokens": 35169,
+      "cacheCreationInputTokens": 33993,
+      "webSearchRequests": 0,
+      "costUSD": 0.16852689999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 1271,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33993,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33993,
+    "cache_read_input_tokens": 35169,
+    "output_tokens": 2903,
+    "output_tokens_details": {
+      "thinking_tokens": 1271
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33993,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2422,
+        "cache_read_input_tokens": 31893,
+        "cache_creation_input_tokens": 5376,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5376
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.16852689999999998,
+  "duration_ms": 24928,
+  "duration_api_ms": 20570,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

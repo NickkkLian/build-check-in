@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "sample": "fenced-refusal",
+      "text": "```text\n# Debug Drill\nStatus: Drill blocked. The family's classroom agreement is missing. Ask the family before using this bug in class.\n```",
+      "criterion": "drill_gate",
+      "old": "fail",
+      "new": "pass",
+      "expected": "pass",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "bare-refusal",
+      "text": "# Debug Drill\nStatus: Drill blocked. The family's classroom agreement is missing. Ask the family before using this bug in class.\n",
+      "criterion": "drill_gate",
+      "old": "pass",
+      "new": "pass",
+      "expected": "pass",
+      "expected_old": "pass",
+      "passed": true
+    },
+    {
+      "sample": "refusal-plus-preview",
+      "text": "# Debug Drill\nStatus: Drill blocked. The family's classroom agreement is missing. Ask the family before using this bug in class.\n\n```python\ndef serve(items):\n    return items.pop()\n```\nPredict what happens.\n",
+      "criterion": "drill_gate",
+      "old": "fail",
+      "new": "fail",
+      "expected": "fail",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "real-code-drill",
+      "text": "```python\ndef serve(items):\n    return items.pop()\n```\nPredict the output, then try alone.",
+      "criterion": "drill_gate",
+      "old": "pass",
+      "new": "pass",
+      "expected": "pass",
+      "expected_old": "pass",
+      "passed": true
+    },
+    {
+      "sample": "unknown-who",
+      "text": "## Family note\n1. It is unknown who found the cause.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "pass",
+      "expected": "pass",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "not-known-who",
+      "text": "## Family note\n1. It is not known who found the cause.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "pass",
+      "expected": "pass",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "explicit-student-credit",
+      "text": "## Family note\n1. Ari found the cause.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "fail",
+      "expected": "fail",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "ai-subject",
+      "text": "## Family note\n1. The AI found the cause.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "pass",
+      "expected": "pass",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "negated-action",
+      "text": "## Family note\n1. Ari did not read the code.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "pass",
+      "expected": "pass",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "separate-positive-clause",
+      "text": "## Family note\n1. Unknown who found the cause, but Ari wrote the tests.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "fail",
+      "expected": "fail",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "unattributed-phrase",
+      "text": "## Family note\n1. Found the cause.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "review",
+      "expected": "review",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "quoted-disputed-claim",
+      "text": "## Family note\n1. Ari claimed \"I found the cause\". The instructor must verify this.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "review",
+      "expected": "review",
+      "expected_old": "fail",
+      "passed": true
+    },
+    {
+      "sample": "affirmed-test-credit",
+      "text": "## Family note\n1. Ari wrote the tests.\n2. Draft\n3. Pending\n4. Next\n5. Reviewed by the instructor: ________\n",
+      "criterion": "parent_no_over_credit",
+      "old": "fail",
+      "new": "fail",
+      "expected": "fail",
+      "expected_old": "fail",
+      "passed": true
+    }
+  ]
+}

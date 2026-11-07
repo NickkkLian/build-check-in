@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 1\nStatus: Draft for the instructor. Print only the Student questions part for the student.\n\n## Student questions\nAnswer in your own words. No AI for this page. Short answers are fine.\n1. Look at version 1 of Shelf Slots. The saved note says the check showed \"expected True, got False\". Walk me through what you thought the shelf should say, and what it said instead.\n2. At version 2, the line that decides if the shelf is full was changed. The saved note says the same failure was still there. Why do you think the change did not help?\n3. Between version 2 and version 3, the line was changed again. Who changed it, and how did you decide what to try?\n4. Your idea says a shelf is full as soon as used slots equal capacity. Which numbers would you pick to test that, and what answer would you expect for each?\n5. Nobody saved a test run for version 3. How would you check that version 3 works? Which test would you run, and what would tell you it is fixed?\n\n## Instructor key\nQ1 [prompt:1][snapshot:1:shelf.py]: A good answer mentions that the student expected the shelf to count as full, and that version 1 said not full. The code at version 1 is a strict \"greater than\" comparison. The test numbers are not recorded, so the student has to supply them. The writer and runner of that test are not recorded.\nQ2 [prompt:2][snapshot:2:shelf.py]: A good answer mentions that the version 2 comparison still does not treat \"used equals capacity\" as full, because it now needs one more than capacity. The saved note says the failure stayed the same. The writer of this change is unknown, and no AI reply or tool call was saved.\nQ3 [prompt:3][snapshot:3:shelf.py]: A good answer names who made the version 3 change (the history says this is unknown) and gives the student's own reason for trying it. It may mention the change from \"greater than or equal to capacity plus one\" to \"greater than or equal to capacity\", which now matches the idea. Any claim of authorship is the student's report only.\nQ4 [context:brief][snapshot:3:shelf.py]: A good answer picks examples where used equals capacity and expects \"full\". It may also pick used below and above capacity, with expected answers that fit the idea. This is the student's own plan, not a recorded step.\nQ5 [prompt:3][snapshot:3:shelf.py]: A good answer says the student would run a test with used equal to capacity and check for True. It may mention also trying other numbers. No run for version 3 is saved, so this shows what they would check, not what they did.\n\n## Private AI contribution note\nAI contribution: Not established. No AI reply, edit record or tool call is saved [prompt:2]. All four changed-line records are `unknown_or_conflicting` [snapshot:1:shelf.py][snapshot:2:shelf.py][snapshot:3:shelf.py]. No student-reported hand edit is recorded either. The writer of the version 1 test and the version 3 change are both unknown [prompt:1][prompt:3].\nInstructor check: The history has no recorded AI step, so none of the questions credits the AI. Ask the student who changed each version. The \"prompts\" are staff notes, not words the student typed [prompt:1][prompt:2][prompt:3]. The folder order was supplied by staff and timestamps do not prove the order [snapshot:1:shelf.py]. The failure at version 1 and the repeat at version 2 are saved notes, not reruns [prompt:1][prompt:2]. Version 3 has no saved run [prompt:3]. Any answer that claims who wrote or ran something stays a self-report.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2159,
+      "cacheReadInputTokens": 39755,
+      "cacheCreationInputTokens": 35881,
+      "webSearchRequests": 0,
+      "costUSD": 0.16909749999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 475,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 35881,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 35881,
+    "cache_read_input_tokens": 39755,
+    "output_tokens": 2159,
+    "output_tokens_details": {
+      "thinking_tokens": 475
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 35881,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1644,
+        "cache_read_input_tokens": 35807,
+        "cache_creation_input_tokens": 4022,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4022
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.16909749999999998,
+  "duration_ms": 17986,
+  "duration_api_ms": 15817,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

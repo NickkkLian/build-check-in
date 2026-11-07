@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Bea made a watering planner that turns litres into millilitres.\n2. Fixed or explained: Bea wrote, \"Ten made the answer even smaller.\"\n3. The AI: The AI wrote a small check for the planner and ran it, and the check failed. It then changed the multiplier to 10, and the check still failed. Bea told the AI she then changed the multiplier by hand to 1000 and asked it to check. The AI's recorded run reported a pass on one example.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- Q1: Own answer, consistent with the history. It matches the test's expected 2000 [result:test-1]. Version 1's water.py has an unknown writer [snapshot:1:water.py]. Version order comes from staff folder names, not timestamps.\n- Q2: Own answer, consistent with the history. The AI's edit changed `* 100` to `* 10` [snapshot:2:water.py][tool:edit-2][result:edit-2], and the test still failed [result:test-2].\n- Q3: Bea's claim to have changed the multiplier by hand is self-reported. The diff matches it [snapshot:3:water.py][prompt:3], but a diff does not show who typed it. The answer does not address the \"what does the history show about who did it\" part. The \"why\" it gives is consistent with the history. Ask Bea how she decided on that number.\n- Q3: The pass was one fictional example. It is a recorded report, not a rerun [result:test-3].\n- No answers read as pasted AI text. None contain personal details, other students' names or instructions. No answers are missing.\n\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\n### Version 1 [snapshot:1:water.py]\nAI did: wrote a check for millilitres(2) and ran it. The recorded result was \"FAIL expected 2000, got 200\" [tool:test-write][result:test-1].\nAnswer A1, copied unchanged:\n> Two litres should fill two thousand millilitres.\n\n### Version 2 [snapshot:2:water.py]\nAI did: edited water.py to `return litres * 10` [tool:edit-2][result:edit-2]. The recorded test run failed [result:test-2].\nAnswer A2, copied unchanged:\n> Ten made the answer even smaller.\n\n### Version 3 [snapshot:3:water.py]\nAI did: ran the check, and the recorded result was a pass on one example [tool:test-3][result:test-3]. The hand edit to `* 1000` is the student's own report [prompt:3].\nAnswer A3, copied unchanged:\n> I changed the multiplier by hand because each litre is a thousand millilitres.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2212,
+      "cacheReadInputTokens": 35169,
+      "cacheCreationInputTokens": 33711,
+      "webSearchRequests": 0,
+      "costUSD": 0.1604889,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 763,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33711,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33711,
+    "cache_read_input_tokens": 35169,
+    "output_tokens": 2212,
+    "output_tokens_details": {
+      "thinking_tokens": 763
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33711,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1731,
+        "cache_read_input_tokens": 31893,
+        "cache_creation_input_tokens": 5094,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5094
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 5,
+  "total_cost_usd": 0.1604889,
+  "duration_ms": 19820,
+  "duration_api_ms": 15977,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}

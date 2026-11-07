@@ -1,0 +1,65 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "result": "# Build Check-in · Step 2\nStatus: Draft. Not sent. The instructor reviews and approves before it goes to the family.\n\n## Family note\n1. Built: Faye is building Shelf Slots, a small program that says whether a shelf is full once the used slots reach its capacity.\n2. Fixed or explained: Faye wrote, \"At three out of three there is no room left.\"\n3. The AI: The saved record shows no AI replies or AI edits. Who wrote each of the three versions is not recorded.\n4. Next: Ask the instructor to select the next example.\n5. Reviewed by the instructor: ________ (required before sending)\n\n## Instructor flags\n- Q1 [prompt:1][snapshot:1:shelf.py]: A1 is an own answer in Faye's words. It fits the version 1 failure note (\"expected True, got False\"), where the line is `used > capacity` [snapshot:1:shelf.py]. The note comes from you. It is a recorded report, not a rerun, and it does not say who ran it.\n- Q2 [prompt:2][snapshot:2:shelf.py]: A2 is an own answer. It fits the saved note that version 2 \"still has the same failure\" [prompt:2]. Version 2 changed the line to `used >= capacity + 1` [snapshot:2:shelf.py]. Nobody recorded a run for it, and the writer is unknown. A2 is a short, general statement, so you could ask Faye to say where in the line the boundary is missed.\n- Q3 [prompt:3][snapshot:3:shelf.py]: A3 is an own answer and matches the history. Version 3 changed the line to `used >= capacity` [snapshot:3:shelf.py]. No run for version 3 is saved, and the writer is unknown [prompt:3]. Faye's \"I do not know who made the edits\" is accurate. Do not credit Faye or the AI with any of the three edits.\n- Attribution: all 4 changed lines are `unknown_or_conflicting`, and no AI reply or tool call was saved [prompt:2]. The note's line 3 says only that nothing is recorded.\n- Consent: classroom and public consent are `missing`, so the note and showcase page stay private and no drill is allowed. The version order is the folder order you supplied, and timestamps do not prove chronology [snapshot:1:shelf.py].\n- No answers look pasted or AI-written, none are missing, and none contain personal details, other students' names or instructions.\n\n## For you (the student)\nHow I built it, in your own words: use this for project showcase or your GitHub README\n\n### Version 1 [snapshot:1:shelf.py]\nAI did: not recorded\nAnswer A1, copied unchanged:\n> At three out of three there is no room left.\n\n### Version 2 [snapshot:2:shelf.py]\nAI did: not recorded\nAnswer A2, copied unchanged:\n> The second version still misses the exact boundary.\n\n### Version 3 [snapshot:3:shelf.py]\nAI did: not recorded\nAnswer A3, copied unchanged:\n> I looked at the three versions. I do not know who made the edits.",
+  "permission_denials": [],
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 4,
+      "outputTokens": 2141,
+      "cacheReadInputTokens": 39956,
+      "cacheCreationInputTokens": 36408,
+      "webSearchRequests": 0,
+      "costUSD": 0.1710456,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 497,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 36408,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 36408,
+    "cache_read_input_tokens": 39956,
+    "output_tokens": 2141,
+    "output_tokens_details": {
+      "thinking_tokens": 497
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 36408,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1504,
+        "cache_read_input_tokens": 36008,
+        "cache_creation_input_tokens": 4348,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4348
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "num_turns": 6,
+  "total_cost_usd": 0.1710456,
+  "duration_ms": 17486,
+  "duration_api_ms": 15131,
+  "stop_reason": "end_turn",
+  "terminal_reason": "completed"
+}
