@@ -5,6 +5,7 @@
 """
 import argparse
 from datetime import datetime, timezone
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -16,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "evals"))
 sys.dont_write_bytecode = True
 from runner import ignore, raw_evidence  # noqa: E402  (shared with the Build Story suite)
+from frozen_inputs import verify as verify_frozen  # noqa: E402
 
 FIXTURES = ROOT / "evals/fixtures"
 CHECKIN = ROOT / "evals/checkin"
@@ -27,9 +29,9 @@ SKILL_MODE = {"step1": "check-in step 1", "step2": "check-in step 2", "drill": "
 ARMS = ("skill", "plain", "rules")
 
 
-def extract(name, out):
-    source = FIXTURES / name
-    command = [sys.executable, "-B", str(SKILL / "scripts/extract_history.py"), str(source / "project"), "--context", str(CHECKIN / name / "context.json"), "--out", str(out)]
+def extract(name, out, fixtures=FIXTURES, checkin=CHECKIN):
+    source = fixtures / name
+    command = [sys.executable, "-B", str(SKILL / "scripts/extract_history.py"), str(source / "project"), "--context", str(checkin / name / "context.json"), "--out", str(out)]
     if (source / "session.jsonl").exists():
         command += ["--session", str(source / "session.jsonl")]
     if (source / "chat.txt").exists():
@@ -73,6 +75,7 @@ def command_for(arm, work):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--suite-root", type=Path, default=ROOT / 'evals', help="directory containing fixtures/ and checkin/ (default: original suite)")
     parser.add_argument("--run-id", default=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M%SZ"))
     parser.add_argument("--repeats", type=int, default=3, choices=range(1, 6))
     parser.add_argument("--tasks", default=",".join(TASKS), help="comma list of step1,step2,drill")
@@ -80,19 +83,34 @@ def main():
     args = parser.parse_args()
     tasks = [t for t in args.tasks.split(",") if t]
     arms = [a for a in args.arms.split(",") if a]
-    if not re.fullmatch(r"[A-Za-z0-9_-]+", args.run_id) or not tasks or any(t not in TASKS for t in tasks) or not arms or any(a not in ARMS for a in arms) or len(arms) != len(set(arms)):
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", args.run_id) or not tasks or any(t not in TASKS for t in tasks) or len(tasks) != len(set(tasks)) or not arms or any(a not in ARMS for a in arms) or len(arms) != len(set(arms)):
         parser.error("run-id must be simple; tasks from step1,step2,drill; distinct arms from skill,plain,rules")
+    suite = args.suite_root.resolve()
+    if not suite.is_relative_to(ROOT / 'evals'):
+        parser.error('suite-root must be inside this repository\'s evals directory')
+    fixtures, checkin = suite / 'fixtures', suite / 'checkin'
+    freeze = suite / 'FROZEN.txt'
+    if suite != ROOT / 'evals' and not freeze.is_file():
+        parser.error('A separate suite requires FROZEN.txt')
+    frozen_count = verify_frozen(freeze) if freeze.is_file() else None
+    cases = json.loads((checkin / 'manifest.json').read_text())
+    names = [item['case'] for item in cases]
+    if not names or len(names) != len(set(names)) or any(not re.fullmatch(r'[a-z0-9-]+', name) for name in names):
+        parser.error('Cases must have unique simple names')
     runroot = ROOT / "evals/runs" / args.run_id
     if runroot.exists():
         parser.error("run directory exists; refusing to overwrite outputs")
     runroot.mkdir(parents=True)
-    cases = json.loads((CHECKIN / "manifest.json").read_text())
     planned = sum(len(arms) * args.repeats for item in cases for task in tasks if task != "step2" or item["answers"])
     manifest = {"suite": "build-checkin", "kind": "dry-run" if args.dry_run else "claude", "model": "sonnet", "runs_per_case": args.repeats, "tasks": tasks, "arms": arms, "expected_total": planned, "runs": []}
+    manifest.update(suite_root=suite.relative_to(ROOT).as_posix(), frozen_files=frozen_count,
+                    freeze_sha256=hashlib.sha256(freeze.read_bytes()).hexdigest() if freeze.is_file() else None,
+                    skill_sha256=hashlib.sha256((SKILL / 'SKILL.md').read_bytes()).hexdigest(),
+                    extractor_sha256=hashlib.sha256((SKILL / 'scripts/extract_history.py').read_bytes()).hexdigest())
     for case_index, item in enumerate(cases):
         name = item["case"]
-        history = extract(name, runroot / f"{name}-history.json")
-        expected = CHECKIN / name / "expected.json"
+        history = extract(name, runroot / f"{name}-history.json", fixtures, checkin)
+        expected = checkin / name / "expected.json"
         for task_index, task in enumerate(tasks):
             if task == "step2" and not item["answers"]:
                 continue
@@ -105,14 +123,14 @@ def main():
                     work = (target / "work").resolve()
                     inputs = work / "input"
                     inputs.mkdir(parents=True)
-                    shutil.copytree(FIXTURES / name / "project", inputs / "project", ignore=ignore)
-                    shutil.copytree(FIXTURES / name / "snapshots", inputs / "snapshots", ignore=ignore)
+                    shutil.copytree(fixtures / name / "project", inputs / "project", ignore=ignore)
+                    shutil.copytree(fixtures / name / "snapshots", inputs / "snapshots", ignore=ignore)
                     for file in ("session.jsonl", "chat.txt"):
-                        if (FIXTURES / name / file).exists():
-                            shutil.copy2(FIXTURES / name / file, inputs / file)
-                    shutil.copy2(CHECKIN / name / "context.json", inputs / "context.json")
+                        if (fixtures / name / file).exists():
+                            shutil.copy2(fixtures / name / file, inputs / file)
+                    shutil.copy2(checkin / name / "context.json", inputs / "context.json")
                     if task == "step2":
-                        shutil.copy2(CHECKIN / name / "answers.md", inputs / "answers.md")
+                        shutil.copy2(checkin / name / "answers.md", inputs / "answers.md")
                     (inputs / "raw-diffs.md").write_text(raw_evidence(history))
                     if arm == "skill":
                         # The worked examples come from the pixel-hop eval case; they stay out of the model's copy.
@@ -139,7 +157,7 @@ def main():
                             output = envelope.get("result", "")
                             if envelope.get("permission_denials"):
                                 raise ValueError(f"permission denied: {json.dumps(envelope['permission_denials'])[:300]}")
-                            if result.returncode or envelope.get("is_error") or not isinstance(output, str) or not output.strip():
+                            if result.returncode or envelope.get('subtype') != 'success' or envelope.get("is_error") or not isinstance(output, str) or not output.strip():
                                 raise ValueError(f"Claude CLI failed (exit {result.returncode}); inspect envelope/stderr")
                             (target / "output.md").write_text(output + "\n")
                             meta["usage"] = envelope.get("usage")

@@ -7,6 +7,10 @@
     },
     {
       "passed": true,
+      "check": "evals/check_extractor.py"
+    },
+    {
+      "passed": true,
       "check": "evals/check_scorer.py"
     },
     {
@@ -20,6 +24,10 @@
     {
       "passed": true,
       "check": "All 53 pre-tuning frozen files match"
+    },
+    {
+      "passed": true,
+      "check": "Second-round cases and unchanged written rules match all 52 frozen hashes"
     },
     {
       "passed": true,
@@ -67,5 +75,5 @@
     }
   ],
   "privacy_issues": [],
-  "public_files_scanned": 536
+  "public_files_scanned": 611
 }

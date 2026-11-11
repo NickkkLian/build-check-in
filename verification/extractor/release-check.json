@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "passed": true,
+      "check": "No private terms, personal paths, non-example emails or credential patterns, including ZIP members"
+    },
+    {
+      "passed": true,
+      "check": "Release has no inherited Git history"
+    },
+    {
+      "passed": true,
+      "check": "Root demo, README, MIT licence and Pages marker exist"
+    },
+    {
+      "passed": true,
+      "check": "MIT licence is present"
+    },
+    {
+      "passed": true,
+      "check": "Demo CSP blocks external connections by default"
+    },
+    {
+      "passed": true,
+      "check": "Every demo reference is local or the approved GitHub README navigation link"
+    },
+    {
+      "passed": true,
+      "check": "Demo code has no network or dynamic-import API calls"
+    },
+    {
+      "passed": true,
+      "check": "Demo CSS loads no remote resources"
+    },
+    {
+      "passed": true,
+      "check": "Inline demo JavaScript parses"
+    },
+    {
+      "passed": true,
+      "check": "JavaScript parses: scripts/browser-check.mjs"
+    },
+    {
+      "passed": true,
+      "check": "JavaScript parses: scripts/browser-runtime.mjs"
+    }
+  ],
+  "issues": [],
+  "files_scanned": 611,
+  "content_counts": {
+    "text": 618,
+    "binary": 5
+  },
+  "email_scope": "UTF-8 text and ZIP text members; compressed media needs visual review",
+  "private_rules": 0,
+  "demo_sha256": "9f68cca4526f59dd95c948587a82fc1fae8b0b33d61a25acdc4da396bdc5606a"
+}

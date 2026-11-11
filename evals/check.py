@@ -8,6 +8,7 @@ import re
 import subprocess
 import sys
 from zipfile import ZipFile
+from frozen_inputs import verify as verify_frozen
 
 ROOT = Path(__file__).resolve().parents[1]
 checks = []
@@ -18,7 +19,7 @@ def check(ok, name):
     print(('PASS ' if ok else 'FAIL ') + name, flush=True)
 
 
-for script in ('scripts/check.py', 'evals/check_scorer.py', 'evals/hand_verdicts.py'):
+for script in ('scripts/check.py', 'evals/check_extractor.py', 'evals/check_scorer.py', 'evals/hand_verdicts.py'):
     result = subprocess.run([sys.executable, '-B', script], cwd=ROOT, capture_output=True, text=True)
     print(result.stdout, end='')
     if result.stderr:
@@ -31,6 +32,7 @@ print(result.stdout, end='')
 check(result.returncode == 0, 'Three-arm pattern screen completes')
 frozen = json.loads((ROOT / 'evals/frozen/SHA256.json').read_text())
 check(all(hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest for name, digest in frozen.items()), 'All 53 pre-tuning frozen files match')
+check(verify_frozen(ROOT / 'evals/heldout-v2/FROZEN.txt') == 52, 'Second-round cases and unchanged written rules match all 52 frozen hashes')
 manifest = json.loads((ROOT / 'verification/heldout/runs/manifest.json').read_text())
 audit = json.loads((ROOT / 'verification/heldout/run-audit.json').read_text())
 check(audit['completed'] == len(manifest['runs']) == 54 and not audit['errors'] and not audit['excluded'], '54 unique completed outputs with no exclusions')

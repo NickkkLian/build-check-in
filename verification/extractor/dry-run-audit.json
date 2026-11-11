@@ -1,0 +1,2868 @@
+{
+  "passed": true,
+  "kind": "dry-run",
+  "prepared": 162,
+  "completed": 0,
+  "frozen_files": 52,
+  "skill_sha256": "cd478405dfcb3fbb188bc201c8ad32043071399de61963e880789b4e2102d7d3",
+  "extractor_sha256": "35d203bc37c42ceb78a963664c4a31e87c14dae1bbdfd618eaa448e991c816b7",
+  "resolved_models": {},
+  "counts": [
+    {
+      "task": "drill",
+      "arm": "plain",
+      "count": 18
+    },
+    {
+      "task": "drill",
+      "arm": "rules",
+      "count": 18
+    },
+    {
+      "task": "drill",
+      "arm": "skill",
+      "count": 18
+    },
+    {
+      "task": "step1",
+      "arm": "plain",
+      "count": 18
+    },
+    {
+      "task": "step1",
+      "arm": "rules",
+      "count": 18
+    },
+    {
+      "task": "step1",
+      "arm": "skill",
+      "count": 18
+    },
+    {
+      "task": "step2",
+      "arm": "plain",
+      "count": 18
+    },
+    {
+      "task": "step2",
+      "arm": "rules",
+      "count": 18
+    },
+    {
+      "task": "step2",
+      "arm": "skill",
+      "count": 18
+    }
+  ],
+  "matched_case_task_inputs": 18,
+  "runs": [
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/step1/skill/1",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/step1/plain/1",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/step1/rules/1",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/step1/plain/2",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/step1/rules/2",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/step1/skill/2",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/step1/rules/3",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/step1/skill/3",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/step1/plain/3",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/step2/plain/1",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/step2/rules/1",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/step2/skill/1",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/step2/rules/2",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/step2/skill/2",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/step2/plain/2",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/step2/skill/3",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/step2/plain/3",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/step2/rules/3",
+      "input_hashes": {
+        "answers.md": "c3b048b108cfb3a9ec6aeb0f99a7296b7cd33f2b8fbcb8034c5c13121432e1e4",
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/drill/rules/1",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/drill/skill/1",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "sound-toggle/drill/plain/1",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/drill/skill/2",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/drill/plain/2",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "sound-toggle/drill/rules/2",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/drill/plain/3",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/drill/rules/3",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "sound-toggle",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "sound-toggle/drill/skill/3",
+      "input_hashes": {
+        "context.json": "720fd021de4aedee94e4c2937d92ccda0cabbdd4a1ee720ca3e53de76970e850",
+        "history.json": "0aa8a08178abf26f279f4771409616c42888b2005a18798fd55b186edbcc08e0",
+        "project/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15",
+        "raw-diffs.md": "59f3bb5723bf57849342642d2baa9a2f51c59561cd609aa693ccf4c41092b0b1",
+        "session.jsonl": "1d03b99c43a6a0f67563986994b036ddd9a371d59de05c407bb96b8d39054c85",
+        "snapshots/1/sound.js": "7d186eed9956247bd403e04d3c311f460cefafb1c682c70df3c76b4b8bb309a9",
+        "snapshots/2/sound.js": "8ce1f2ccf245c87916e4dd8f9fb7729e50980a3652844c99bc35d28dc654af03",
+        "snapshots/3/sound.js": "f916f40dd42c69f6bc817605f9e75d17d8ce74ed21120d51ea4de0f230c97d15"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "packing-shared/step1/plain/1",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "packing-shared/step1/rules/1",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "packing-shared/step1/skill/1",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "packing-shared/step1/rules/2",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "packing-shared/step1/skill/2",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "packing-shared/step1/plain/2",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "packing-shared/step1/skill/3",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "packing-shared/step1/plain/3",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "packing-shared/step1/rules/3",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "packing-shared/step2/rules/1",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "packing-shared/step2/skill/1",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "packing-shared/step2/plain/1",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "packing-shared/step2/skill/2",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "packing-shared/step2/plain/2",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "packing-shared/step2/rules/2",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "packing-shared/step2/plain/3",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "packing-shared/step2/rules/3",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "packing-shared/step2/skill/3",
+      "input_hashes": {
+        "answers.md": "526d831563ee2c823124899595f955002af9ce2eceb19ed27047f4a09efa5fcc",
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "packing-shared/drill/skill/1",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "packing-shared/drill/plain/1",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "packing-shared/drill/rules/1",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "packing-shared/drill/plain/2",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "packing-shared/drill/rules/2",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "packing-shared/drill/skill/2",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "packing-shared/drill/rules/3",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "packing-shared/drill/skill/3",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "packing-shared",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "packing-shared/drill/plain/3",
+      "input_hashes": {
+        "context.json": "27a1fdcc468b46b0b47263d764d9cae685bf03588b13f5206bc3f07b5c71cbde",
+        "history.json": "0f8c2e93fdf6c9ba377c04355f819bf12b158675d11d47f87051f6c27c1dd5ad",
+        "project/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349",
+        "raw-diffs.md": "5d25a8da2e1f950db7f38b5d997b314a25adce7a756c4462b4b68370be62d134",
+        "session.jsonl": "e2183b1303a01c5b06c6a67d9718a366e37915584414a39cb2ac3450f140995b",
+        "snapshots/1/packing.py": "121c007b226117f2a1d2175e2f5b62ea37dccc3ef70278d77e3fb68712bb0a1c",
+        "snapshots/2/packing.py": "15cc83692e7107e41b528c09e6c87c09b55fb27e20b89c0f98ea30fd0f66f730",
+        "snapshots/3/packing.py": "6e1ea1df91227aaca1f59ed1ddb4ecf9d92a38b3a3ef3f923346f24b3d5bd349"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "badge-zero/step1/rules/1",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "badge-zero/step1/skill/1",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "badge-zero/step1/plain/1",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "badge-zero/step1/skill/2",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "badge-zero/step1/plain/2",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "badge-zero/step1/rules/2",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "badge-zero/step1/plain/3",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "badge-zero/step1/rules/3",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "badge-zero/step1/skill/3",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "badge-zero/step2/skill/1",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "badge-zero/step2/plain/1",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "badge-zero/step2/rules/1",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "badge-zero/step2/plain/2",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "badge-zero/step2/rules/2",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "badge-zero/step2/skill/2",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "badge-zero/step2/rules/3",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "badge-zero/step2/skill/3",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "badge-zero/step2/plain/3",
+      "input_hashes": {
+        "answers.md": "2bfae28cc255b5a7adc00e370cb81da77aeff97f31518d1d2c3765c0fc9a36f5",
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "badge-zero/drill/plain/1",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "badge-zero/drill/rules/1",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "badge-zero/drill/skill/1",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "badge-zero/drill/rules/2",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "badge-zero/drill/skill/2",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "badge-zero/drill/plain/2",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "badge-zero/drill/skill/3",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "badge-zero/drill/plain/3",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "badge-zero",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "badge-zero/drill/rules/3",
+      "input_hashes": {
+        "chat.txt": "69d18ab7e77e6d0b7bab7092009435c501f8de54a7973fa1af9d30f8a959a65b",
+        "context.json": "9feaffe28dba4f4cf3a7c9817d9ece70a340c25806c2859fd509973299d41ddf",
+        "history.json": "dd6286d7275ce13e0f876b7fd9a7219db698af714bd095c1c70ce759a9affac9",
+        "project/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342",
+        "raw-diffs.md": "fe7ff877619be9bade875c70c417bc0bd9faa4059b23f7cee42a1c8a7a1f057c",
+        "snapshots/1/badge.js": "be162544cc8ad0c2cc8652b734388620cb0bb013b0169f3fa920a892265d4d6f",
+        "snapshots/2/badge.js": "f92a620fe23aaeb08884d33351365eddcbb4e4be5a511582f7c232d525f92507",
+        "snapshots/3/badge.js": "29436c4f07d6d29fc89332f6b9d3e0448b6348205f63adfa86d452af0f0e6342"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/step1/skill/1",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/step1/plain/1",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/step1/rules/1",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/step1/plain/2",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/step1/rules/2",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/step1/skill/2",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/step1/rules/3",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/step1/skill/3",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/step1/plain/3",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/step2/plain/1",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/step2/rules/1",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/step2/skill/1",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/step2/rules/2",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/step2/skill/2",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/step2/plain/2",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/step2/skill/3",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/step2/plain/3",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/step2/rules/3",
+      "input_hashes": {
+        "answers.md": "23f880e16c016396bc7fc7199aa6d9dc37323ff2e4a028ab49adc4f0991bb8b1",
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/drill/rules/1",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/drill/skill/1",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "quiz-scope/drill/plain/1",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/drill/skill/2",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/drill/plain/2",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "quiz-scope/drill/rules/2",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/drill/plain/3",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/drill/rules/3",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "quiz-scope",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "quiz-scope/drill/skill/3",
+      "input_hashes": {
+        "context.json": "ec01d4d7b4e66892641ab7e06150538b5273801d133ed1f2dc9fe9cc9bd495e9",
+        "history.json": "1548253d46a382c4b043ec17ed61f059a483b9e834831cb5c5eeacd042b1ae93",
+        "project/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d",
+        "raw-diffs.md": "9e29d17bfe57bbf1c27254ed7f16667d3e407b7b293dd6c5797e3e364c4ab0e9",
+        "session.jsonl": "69e33af285516d622a74f65d3c4edf218145d0573c25ba8a14848c0f3bd3d024",
+        "snapshots/1/quiz.py": "51530893df38e0ab81eaf76c94e8b646681131edd99a6d22013e22aba2c91fc8",
+        "snapshots/2/quiz.py": "ffe29969b957dfb596fbebc5b5ee74b311da34d690222b0a33bbbfa803291485",
+        "snapshots/3/quiz.py": "45b08acc0c75a9234bdb45fad3565cf39eb42ccc9f9245b89e5f571d152a9f8d"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "label-escape/step1/plain/1",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "label-escape/step1/rules/1",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "label-escape/step1/skill/1",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "label-escape/step1/rules/2",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "label-escape/step1/skill/2",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "label-escape/step1/plain/2",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "label-escape/step1/skill/3",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "label-escape/step1/plain/3",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "label-escape/step1/rules/3",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "label-escape/step2/rules/1",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "label-escape/step2/skill/1",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "label-escape/step2/plain/1",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "label-escape/step2/skill/2",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "label-escape/step2/plain/2",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "label-escape/step2/rules/2",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "label-escape/step2/plain/3",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "label-escape/step2/rules/3",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "label-escape/step2/skill/3",
+      "input_hashes": {
+        "answers.md": "0b4feb43c913807efddea88a147af2d9b5ce111a4ff89646ad253180becaff62",
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "label-escape/drill/skill/1",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "label-escape/drill/plain/1",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "label-escape/drill/rules/1",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "label-escape/drill/plain/2",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "label-escape/drill/rules/2",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "label-escape/drill/skill/2",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "label-escape/drill/rules/3",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "label-escape/drill/skill/3",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "label-escape",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "label-escape/drill/plain/3",
+      "input_hashes": {
+        "chat.txt": "384c4a1b565cd20042d16d044a2607ad7f7e8016557bef6d5742edb02b3f1084",
+        "context.json": "e25c47ea712c6a9a59a7b93e66ad7fd5bb16fb652bd23ac5798cb7f0d1fcfd6d",
+        "history.json": "40d7016e88e52de6847e0d771ce8336bbd46a5b08bd713d282270fd155fd26aa",
+        "project/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9",
+        "raw-diffs.md": "eca74b305901873a8a723f7702d9c522ecaef170bf670cf83f049da8880db50f",
+        "snapshots/1/label.py": "0287accdbc2aac829a4de238ae26b7ab3dbac6aae648affb27af8844620bfab5",
+        "snapshots/2/label.py": "143e32c527a50ee3b4e14028893ed654cd77ac148a6c924947c0604a1996df44",
+        "snapshots/3/label.py": "c212a54e259ac91e28b93326bf3a96a841d90d3d5ba328b7daa01346feb893d9"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "photo-sort/step1/rules/1",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "photo-sort/step1/skill/1",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "photo-sort/step1/plain/1",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "photo-sort/step1/skill/2",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "photo-sort/step1/plain/2",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "photo-sort/step1/rules/2",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "photo-sort/step1/plain/3",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "photo-sort/step1/rules/3",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step1",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "photo-sort/step1/skill/3",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "photo-sort/step2/skill/1",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "photo-sort/step2/plain/1",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "photo-sort/step2/rules/1",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "photo-sort/step2/plain/2",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "photo-sort/step2/rules/2",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "photo-sort/step2/skill/2",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "photo-sort/step2/rules/3",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "photo-sort/step2/skill/3",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "step2",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "photo-sort/step2/plain/3",
+      "input_hashes": {
+        "answers.md": "9550c6f4852d88a1e17caf2ed991170f703f04bb2828d5a0c4b673455013812a",
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 1,
+      "relative_dir": "photo-sort/drill/plain/1",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 1,
+      "relative_dir": "photo-sort/drill/rules/1",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 1,
+      "relative_dir": "photo-sort/drill/skill/1",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 2,
+      "relative_dir": "photo-sort/drill/rules/2",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 2,
+      "relative_dir": "photo-sort/drill/skill/2",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 2,
+      "relative_dir": "photo-sort/drill/plain/2",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "skill",
+      "repeat": 3,
+      "relative_dir": "photo-sort/drill/skill/3",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "plain",
+      "repeat": 3,
+      "relative_dir": "photo-sort/drill/plain/3",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    },
+    {
+      "case": "photo-sort",
+      "task": "drill",
+      "arm": "rules",
+      "repeat": 3,
+      "relative_dir": "photo-sort/drill/rules/3",
+      "input_hashes": {
+        "context.json": "686a068825672a40214755ebd425a49131599951a139522c17dfd6a75851a8b5",
+        "history.json": "5961de9d027df8e0deb7d9000efbb9497be4053e6b9428e97ba939790ecd66b6",
+        "project/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81",
+        "raw-diffs.md": "8c6f067364feedc2786014e63c1216b2eaad712868ce2aaea1b7ebd5ab607db5",
+        "session.jsonl": "18d59da53f24cfca2ab69336c480c5c17a0e12a7e378d81f1286658002abc001",
+        "snapshots/1/photos.js": "a11be73a0472e9bc64b02d6047c873eaf5a41d168b61f8e526f97f5dc05c513f",
+        "snapshots/2/photos.js": "0f0172f4a6e6c0c1e57fd623d93a021347719d6b212d7dabd15f14f4700ac26f",
+        "snapshots/3/photos.js": "22e179b2f48dc12a1c2183b9369d990a78afeaa332653905cbdd2ec638fabd81"
+      }
+    }
+  ]
+}
