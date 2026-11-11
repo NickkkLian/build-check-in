@@ -1,0 +1,501 @@
+{
+  "passed": true,
+  "source_commit": "f10857f",
+  "extractor_sha256": {
+    "before": "2d0c7e8b13c98840bc40954bc65469482faf3e4072d89c9c6c519c9b1a1b9b40",
+    "after": "35d203bc37c42ceb78a963664c4a31e87c14dae1bbdfd618eaa448e991c816b7"
+  },
+  "raw_reply_count": 4,
+  "cases": [
+    {
+      "case": "queue-end",
+      "raw_assistant_text": [
+        {
+          "source": "session.jsonl:6",
+          "text": "The code selects the last item instead of the first."
+        }
+      ],
+      "before": {
+        "assistant_records": [],
+        "dropped_text": [
+          {
+            "source": "session.jsonl:6",
+            "text": "The code selects the last item instead of the first."
+          }
+        ],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "A waiting list must serve the earliest arrival first. Please write a small check for serve(['red', 'blue']) at version 1.",
+            "source": "session.jsonl:1"
+          },
+          {
+            "id": "prompt:2",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7"
+          },
+          {
+            "id": "prompt:3",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Please make the next change for version 3.",
+            "source": "session.jsonl:12"
+          }
+        ]
+      },
+      "after": {
+        "assistant_records": [
+          {
+            "id": "assistant:1",
+            "kind": "assistant_turn",
+            "trust": "untrusted source data",
+            "role": "assistant",
+            "actor": "ai",
+            "text": "The code selects the last item instead of the first.",
+            "source": "session.jsonl:6",
+            "block": 1,
+            "support": "Recorded assistant wording, not independent proof of its claims or of an edit or test run."
+          }
+        ],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "A waiting list must serve the earliest arrival first. Please write a small check for serve(['red', 'blue']) at version 1.",
+            "source": "session.jsonl:1",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:2",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:3",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Please make the next change for version 3.",
+            "source": "session.jsonl:12",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          }
+        ]
+      }
+    },
+    {
+      "case": "garden-units",
+      "raw_assistant_text": [
+        {
+          "source": "session.jsonl:6",
+          "text": "The multiplier is 100 although one litre contains 1000 millilitres."
+        }
+      ],
+      "before": {
+        "assistant_records": [],
+        "dropped_text": [
+          {
+            "source": "session.jsonl:6",
+            "text": "The multiplier is 100 although one litre contains 1000 millilitres."
+          }
+        ],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "A watering planner converts litres to millilitres. Please write a small check for millilitres(2) at version 1.",
+            "source": "session.jsonl:1"
+          },
+          {
+            "id": "prompt:2",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7"
+          },
+          {
+            "id": "prompt:3",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "At version 3 I changed water.py by hand to `return litres * 1000`. Please check it.",
+            "source": "session.jsonl:12"
+          }
+        ]
+      },
+      "after": {
+        "assistant_records": [
+          {
+            "id": "assistant:1",
+            "kind": "assistant_turn",
+            "trust": "untrusted source data",
+            "role": "assistant",
+            "actor": "ai",
+            "text": "The multiplier is 100 although one litre contains 1000 millilitres.",
+            "source": "session.jsonl:6",
+            "block": 1,
+            "support": "Recorded assistant wording, not independent proof of its claims or of an edit or test run."
+          }
+        ],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "A watering planner converts litres to millilitres. Please write a small check for millilitres(2) at version 1.",
+            "source": "session.jsonl:1",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:2",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:3",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "At version 3 I changed water.py by hand to `return litres * 1000`. Please check it.",
+            "source": "session.jsonl:12",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          }
+        ]
+      }
+    },
+    {
+      "case": "map-offset",
+      "raw_assistant_text": [],
+      "before": {
+        "assistant_records": [],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "At version 1, USER report: got hill instead of lake.\n",
+            "source": "chat.txt:2"
+          },
+          {
+            "id": "prompt:2",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "At version 2, it still gives the same point. Please explain the bug before I change anything.\n",
+            "source": "chat.txt:3"
+          },
+          {
+            "id": "prompt:3",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Version 3 now looks different. I did not record who changed it or any test run.\n",
+            "source": "chat.txt:4"
+          }
+        ]
+      },
+      "after": {
+        "assistant_records": [],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "At version 1, USER report: got hill instead of lake.\n",
+            "source": "chat.txt:1",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:2",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "At version 2, it still gives the same point. Please explain the bug before I change anything.\n",
+            "source": "chat.txt:2",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:3",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Version 3 now looks different. I did not record who changed it or any test run.\n",
+            "source": "chat.txt:3",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          }
+        ]
+      }
+    },
+    {
+      "case": "gallery-case",
+      "raw_assistant_text": [
+        {
+          "source": "session.jsonl:6",
+          "text": "The comparison is case-sensitive and the stored literal uses different case."
+        }
+      ],
+      "before": {
+        "assistant_records": [],
+        "dropped_text": [
+          {
+            "source": "session.jsonl:6",
+            "text": "The comparison is case-sensitive and the stored literal uses different case."
+          }
+        ],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "A gallery should accept a photo tag regardless of letter case. Please write a small check for is_photo('photo') at version 1.",
+            "source": "session.jsonl:1"
+          },
+          {
+            "id": "prompt:2",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7"
+          },
+          {
+            "id": "prompt:3",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Please make the next change for version 3.",
+            "source": "session.jsonl:12"
+          }
+        ]
+      },
+      "after": {
+        "assistant_records": [
+          {
+            "id": "assistant:1",
+            "kind": "assistant_turn",
+            "trust": "untrusted source data",
+            "role": "assistant",
+            "actor": "ai",
+            "text": "The comparison is case-sensitive and the stored literal uses different case.",
+            "source": "session.jsonl:6",
+            "block": 1,
+            "support": "Recorded assistant wording, not independent proof of its claims or of an edit or test run."
+          }
+        ],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "A gallery should accept a photo tag regardless of letter case. Please write a small check for is_photo('photo') at version 1.",
+            "source": "session.jsonl:1",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:2",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:3",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Please make the next change for version 3.",
+            "source": "session.jsonl:12",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          }
+        ]
+      }
+    },
+    {
+      "case": "receipt-total",
+      "raw_assistant_text": [
+        {
+          "source": "session.jsonl:6",
+          "text": "The initial code subtracts the fee instead of adding it."
+        }
+      ],
+      "before": {
+        "assistant_records": [],
+        "dropped_text": [
+          {
+            "source": "session.jsonl:6",
+            "text": "The initial code subtracts the fee instead of adding it."
+          }
+        ],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "A receipt total must include a fixed service fee. Please write a small check for total([4, 6], 2) at version 1.",
+            "source": "session.jsonl:1"
+          },
+          {
+            "id": "prompt:2",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7"
+          },
+          {
+            "id": "prompt:3",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Please make the next change for version 3.",
+            "source": "session.jsonl:12"
+          }
+        ]
+      },
+      "after": {
+        "assistant_records": [
+          {
+            "id": "assistant:1",
+            "kind": "assistant_turn",
+            "trust": "untrusted source data",
+            "role": "assistant",
+            "actor": "ai",
+            "text": "The initial code subtracts the fee instead of adding it.",
+            "source": "session.jsonl:6",
+            "block": 1,
+            "support": "Recorded assistant wording, not independent proof of its claims or of an edit or test run."
+          }
+        ],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "A receipt total must include a fixed service fee. Please write a small check for total([4, 6], 2) at version 1.",
+            "source": "session.jsonl:1",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:2",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Please try a change for version 2.",
+            "source": "session.jsonl:7",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:3",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Please make the next change for version 3.",
+            "source": "session.jsonl:12",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          }
+        ]
+      }
+    },
+    {
+      "case": "shelf-boundary",
+      "raw_assistant_text": [],
+      "before": {
+        "assistant_records": [],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "The instructor supplied snapshots 1, 2 and 3 in order. FAIL expected True, got False at version 1. The writer and runner are not recorded.\n",
+            "source": "chat.txt:2"
+          },
+          {
+            "id": "prompt:2",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Version 2 still has the same failure according to the saved note. No AI reply or tool call was saved.\n",
+            "source": "chat.txt:3"
+          },
+          {
+            "id": "prompt:3",
+            "kind": "student_turn",
+            "trust": "untrusted source data",
+            "text": "Version 3 has a new comparison. I do not know who changed it. There is no saved run for version 3.\n",
+            "source": "chat.txt:4"
+          }
+        ]
+      },
+      "after": {
+        "assistant_records": [],
+        "dropped_text": [],
+        "user_records": [
+          {
+            "id": "prompt:1",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "The instructor supplied snapshots 1, 2 and 3 in order. FAIL expected True, got False at version 1. The writer and runner are not recorded.\n",
+            "source": "chat.txt:1",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:2",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Version 2 still has the same failure according to the saved note. No AI reply or tool call was saved.\n",
+            "source": "chat.txt:2",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          },
+          {
+            "id": "prompt:3",
+            "kind": "user_turn",
+            "trust": "untrusted source data",
+            "role": "user",
+            "actor": "unknown",
+            "text": "Version 3 has a new comparison. I do not know who changed it. There is no saved run for version 3.\n",
+            "source": "chat.txt:3",
+            "support": "The USER role does not identify the human author. An adult supplying a history or snapshots does not establish that staff or the student wrote these messages."
+          }
+        ]
+      }
+    }
+  ]
+}

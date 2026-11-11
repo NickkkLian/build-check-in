@@ -22,7 +22,7 @@ CRITERIA = {
     "step2": ["parent_quote", "parent_privacy", "parent_no_over_credit", "parent_no_learning_claim", "parent_flagged", "parent_approval", "parent_five_lines", "parent_no_unsupported"],
     "drill": ["drill_gate", "drill_fix_order", "drill_steps", "drill_anon", "drill_events"],
 }
-ID = re.compile(r"\[((?:prompt|tool|result|git|snapshot|worktree|context|current|manual)[^\]\n]*)\]")
+ID = re.compile(r"\[((?:assistant|prompt|tool|result|git|snapshot|worktree|context|current|manual)[^\]\n]*)\]")
 YES_NO = re.compile(r"^(?:did|do|does|is|was|were|are|can|could|would|should|have|has|had|will|isn't|wasn't|didn't)\b", re.I)
 SPECIFIC_THING = re.compile(r"\b(?:version|v\d|commit|test|prompt|error|attempt|fix|message|run|console|output|step|hand)\b", re.I)
 SPECIFIC_POINT = re.compile(r"\d|\b(?:first|second|third|fourth|fifth|last|final|next)\b|[\"“`]")

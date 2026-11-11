@@ -60,7 +60,7 @@ with tempfile.TemporaryDirectory(dir=ROOT/'verification',prefix='helper-fixture-
     result=subprocess.run(cli,capture_output=True,text=True,env=env)
     check(result.returncode==0,'Extractor normal CLI reads supplied fictional project and chat')
     if result.returncode==0:
-        data=json.loads((base/'history.json').read_text());check(len(data['prompts'])==1,'Extractor records the student prompt')
+        data=json.loads((base/'history.json').read_text());check(len(data['prompts'])==1,'Extractor records the USER prompt')
 report={'passed':all(x['passed'] for x in checks),'checks':checks}
 (ROOT/'verification/check-results.json').write_text(json.dumps(report,indent=2)+'\n')
 raise SystemExit(0 if report['passed'] else 1)

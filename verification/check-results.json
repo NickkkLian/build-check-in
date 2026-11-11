@@ -87,7 +87,7 @@
     },
     {
       "passed": true,
-      "check": "Extractor records the student prompt"
+      "check": "Extractor records the USER prompt"
     }
   ]
 }
