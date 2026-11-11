@@ -1,0 +1,3 @@
+USER: Version 1: USER report: expected 0, saw 10.
+USER: Version 2 still displays ten. Please explain why.
+USER: Version 3 is different. No reply, edit author or run was saved.

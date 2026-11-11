@@ -1,0 +1,9 @@
+{
+  "adult_runner_confirmed": true,
+  "student_name": "Casey",
+  "project_name": "Badge Count",
+  "idea": "A badge displays zero as zero; only a missing count should default to ten.",
+  "claims": [],
+  "classroom_drill_consent": "yes",
+  "next_step": "Bring one new input to discuss with the instructor."
+}

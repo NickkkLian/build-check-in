@@ -1,0 +1,3 @@
+USER: The instructor supplied three snapshots. Version 1: Saved note: FAIL expected escaped angle brackets, got a nested tag.
+USER: A saved note says version 2 still has the problem. The speaker, editor and runner are not recorded.
+USER: Version 3 contains a change. There is no saved run or assistant reply.

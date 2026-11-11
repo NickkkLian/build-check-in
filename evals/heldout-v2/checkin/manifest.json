@@ -1,0 +1,26 @@
+[
+  {
+    "case": "sound-toggle",
+    "answers": true
+  },
+  {
+    "case": "packing-shared",
+    "answers": true
+  },
+  {
+    "case": "badge-zero",
+    "answers": true
+  },
+  {
+    "case": "quiz-scope",
+    "answers": true
+  },
+  {
+    "case": "label-escape",
+    "answers": true
+  },
+  {
+    "case": "photo-sort",
+    "answers": true
+  }
+]
